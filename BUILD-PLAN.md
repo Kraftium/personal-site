@@ -21,6 +21,8 @@ Approved by Aidan on 2026-10-23.
 
 ## Phases
 
+Status (2026-10-23): phases 0–6 are built; Cloudflare connection and phase 7 remain.
+
 **0. Scaffold**
 `.gitignore` (originals, node_modules), `package.json` with `photos`/`build`/`check` scripts, `_headers`, README with the workflow above, DESIGN.md.
 
