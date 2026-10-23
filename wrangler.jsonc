@@ -1,0 +1,13 @@
+// Cloudflare Workers static-assets config: serve the committed site/ folder as-is.
+// No build step runs on Cloudflare; _headers in site/ sets caching.
+{
+  "name": "www",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  // Required by `wrangler preview`, which Workers Builds runs for PR branches.
+  "previews": {}
+}
