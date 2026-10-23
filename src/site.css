@@ -95,6 +95,15 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .index li a { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; }
 .index small { color: var(--muted); margin-left: 8px; font-size: 12px; }
 
+/* Places map */
+.map { margin: 0 0 8px; }
+.map svg { display: block; width: 100%; height: auto; max-height: 70vh; }
+.map .land { fill: var(--surface); }
+.map .borders { fill: none; stroke: var(--line); stroke-width: 1; stroke-linejoin: round; }
+.map circle { fill: var(--accent); fill-opacity: .75; stroke: var(--bg); stroke-width: 1.5; }
+.map a:hover circle, .map a:focus-visible circle { fill-opacity: 1; stroke: var(--text); }
+.map a:focus-visible { outline: none; }
+
 /* Home */
 .intro { padding: 56px 0 28px; display: grid; gap: 10px; }
 .intro h1 { font-size: clamp(28px, 6vw, 44px); font-weight: 600; letter-spacing: -.02em; line-height: 1.1; }
