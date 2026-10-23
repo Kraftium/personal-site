@@ -9,6 +9,7 @@ import { transform } from 'esbuild';
 import { geoAlbersUsa } from 'd3-geo';
 import sharp from 'sharp';
 import { existsSync } from 'node:fs';
+import * as brands from 'simple-icons';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const SITE = join(ROOT, 'site');
@@ -174,7 +175,9 @@ function header(current, { sizeToggle = false } = {}) {
   return `<header class="top wrap"><a class="me" href="/">${esc(site.name)}</a>${current !== 'home' ? '<span class="crumb">/ <a href="/photos/">Photography</a></span>' : ''}<nav class="nav" aria-label="Main">${current === 'home' ? link('/photos/', 'Photography', 'photos') : links.join('')}${current !== 'home' ? `<details class="menu"><summary>Menu</summary><div>${link('/photos/', 'Photography', 'photos')}${links.join('')}</div></details>` : ''}${toggle}</nav></header>`;
 }
 
-const footer = () => `<footer class="foot wrap"><span>© ${new Date().getFullYear()} ${esc(site.name)}</span>${(site.links || []).map((l) => `<a href="${esc(l.url)}" rel="me">${esc(l.label)}</a>`).join('')}</footer>`;
+const brand = (name) => brands['si' + name[0].toUpperCase() + name.slice(1)];
+const socials = () => `<span class="soc">${(site.links || []).map((l) => `<a href="${esc(l.url)}" rel="me" aria-label="${esc(l.label)}" title="${esc(l.label)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${brand(l.icon).path}"/></svg></a>`).join('')}</span>`;
+const footer = () => `<footer class="foot wrap"><span>© ${new Date().getFullYear()} ${esc(site.name)}</span>${socials()}</footer>`;
 
 // Link previews (Discord, iMessage, etc.) use 1200×630 cards: the photo letterboxed on the
 // page background so nothing is cropped. /og/photo.jpg is served by worker/index.js and
@@ -200,7 +203,7 @@ const totalLine = `${plural(photos.length, 'photo')} · ${plural(albums.length, 
 emit('/', page({
   path: '/', current: 'home', image: DAILY,
   description: `${site.name}: ${site.tagline}`,
-  body: `<section class="intro"><h1>${esc(site.name)}</h1><p>${esc(site.tagline)}</p></section>
+  body: `<section class="intro"><h1>${esc(site.name)}</h1><p>${esc(site.tagline)}</p>${socials()}</section>
 <section aria-labelledby="ph"><a class="door" href="/photos/"><b id="ph">Photography →</b><span class="muted">${totalLine}</span></a>${await favStrip()}</section>`,
 }));
 

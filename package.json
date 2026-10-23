@@ -20,6 +20,7 @@
     "lighthouse": "^13.5.0",
     "playwright-core": "^1.64.1",
     "sharp": "^0.35.5",
+    "simple-icons": "^13.21.0",
     "topojson-client": "^3.1.0",
     "topojson-simplify": "^3.0.3",
     "us-atlas": "^3.0.1"
