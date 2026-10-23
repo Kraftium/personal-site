@@ -6,6 +6,7 @@ import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir, rm, readdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { transform } from 'esbuild';
+import { geoAlbersUsa } from 'd3-geo';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const SITE = join(ROOT, 'site');
@@ -245,10 +246,31 @@ for (const pl of placeList) {
   if (!byRegion.has(key)) byRegion.set(key, []);
   byRegion.get(key).push(pl);
 }
+// Static US map. Places closer than ~10px merge into one dot that links to the
+// region's list; a single place links straight to its page.
+const usMap = (await readFile(join(ROOT, 'src/us-map.svg'), 'utf8')).trim();
+const project = geoAlbersUsa().scale(1300).translate([487.5, 305]);
+const dots = [];
+for (const pl of placeList) {
+  const xy = project([pl.lon, pl.lat]);
+  if (!xy) { warnings.push(`${pl.slug}: outside the US map`); continue; }
+  const near = dots.find((d) => Math.hypot(d.x - xy[0], d.y - xy[1]) < 10);
+  if (near) { near.places.push(pl); near.x = (near.x + xy[0]) / 2; near.y = (near.y + xy[1]) / 2; }
+  else dots.push({ x: xy[0], y: xy[1], places: [pl] });
+}
+const regionId = (r) => `r-${(r || 'elsewhere').toLowerCase().replace(/\W+/g, '-')}`;
+const dotSvg = dots.map((d) => {
+  const n = d.places.reduce((t, pl) => t + pl.photos.length, 0);
+  const one = d.places.length === 1;
+  const label = `${d.places.map((pl) => pl.title).join(', ')}: ${plural(n, 'photo')}`;
+  const href = one ? d.places[0].url : `#${regionId(d.places[0].region?.title)}`;
+  return `<a href="${href}" aria-label="${esc(label)}"><circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(4 + Math.sqrt(n) * 1.6).toFixed(1)}"><title>${esc(label)}</title></circle></a>`;
+}).join('');
+
 emit('/places/', page({
   path: '/places/', title: 'Places', current: 'places',
   description: `Where ${site.name}'s photographs were taken.`,
-  body: `<div class="head"><span class="lbl">Photography</span><h1>Places</h1><p class="muted">${plural(placeList.length, 'place')} in ${plural(byRegion.size, 'region')}.</p></div><div class="index" id="place-list">${[...byRegion].map(([r, list]) => indexCol(`r-${r.toLowerCase().replace(/\W+/g, '-')}`, `${esc(r)}${list[0].region ? `, ${list[0].region.state}` : ''}`, list.map((pl) => `<li><a href="${pl.url}" data-place="${pl.slug}"><span>${esc(pl.title)}${pl.city && pl.city !== pl.title ? `<small>${esc(pl.city)}</small>` : ''}</span><span class="n">${pl.photos.length}</span></a></li>`))).join('')}</div>`,
+  body: `<div class="head"><span class="lbl">Photography</span><h1>Places</h1><p class="muted">${plural(placeList.length, 'place')} in ${plural(byRegion.size, 'region')}.</p></div><figure class="map"><svg viewBox="0 0 975 610" role="group" aria-label="Map of the United States with a dot for each place">${usMap}<g class="dots">${dotSvg}</g></svg></figure><div class="index" id="place-list">${[...byRegion].map(([r, list]) => indexCol(regionId(r), `${esc(r)}${list[0].region ? `, ${list[0].region.state}` : ''}`, list.map((pl) => `<li><a href="${pl.url}" data-place="${pl.slug}"><span>${esc(pl.title)}${pl.city && pl.city !== pl.title ? `<small>${esc(pl.city)}</small>` : ''}</span><span class="n">${pl.photos.length}</span></a></li>`))).join('')}</div>`,
 }));
 for (const pl of placeList) {
   listPage({
