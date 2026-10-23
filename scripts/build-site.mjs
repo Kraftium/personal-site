@@ -7,6 +7,8 @@ import { readFile, writeFile, mkdir, rm, readdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { transform } from 'esbuild';
 import { geoAlbersUsa } from 'd3-geo';
+import sharp from 'sharp';
+import { existsSync } from 'node:fs';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const SITE = join(ROOT, 'site');
@@ -174,10 +176,19 @@ function header(current, { sizeToggle = false } = {}) {
 
 const footer = () => `<footer class="foot wrap"><span>© ${new Date().getFullYear()} ${esc(site.name)}</span>${(site.links || []).map((l) => `<a href="${esc(l.url)}" rel="me">${esc(l.label)}</a>`).join('')}</footer>`;
 
-function page({ path, title, description, body, current, sizeToggle, image, solo }) {
+// Link previews (Discord, iMessage, etc.) use 1200×630 cards: the photo letterboxed on the
+// page background so nothing is cropped. /og/photo.jpg is served by worker/index.js and
+// changes daily to a random favorite.
+const DAILY = '/og/photo.jpg';
+const cards = new Map();
+const cardFor = (p) => { const path = `og/p/${p.id}-${p.hash}.jpg`; cards.set(path, p); return '/' + path; };
+const PHOTO_OG = `Photography by ${site.name}`;
+
+function page({ path, title, description, body, current, sizeToggle, image, solo, ogTitle, ogDescription }) {
   const full = title ? `${title} · ${site.name}` : site.name;
-  const canonical = site.url.replace(/\/$/, '') + path;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(full)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}"><meta name="theme-color" content="#0f0f10"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:title" content="${esc(title || site.name)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}">${image ? `<meta property="og:image" content="${site.url.replace(/\/$/, '')}/${image.outputs[1]?.src || image.outputs[0].src}"><meta name="twitter:card" content="summary_large_image">` : ''}<script>${headScript}</script><style>${css}</style><script type="module" src="/assets/${jsName}"></script></head><body${solo ? ' class="solo"' : ''}>${solo ? body : `<a class="skip" href="#main">Skip to content</a>${header(current, { sizeToggle })}<main id="main" class="wrap">${body}</main>${footer()}`}</body></html>`;
+  const base = site.url.replace(/\/$/, '');
+  const canonical = base + path;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(full)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}"><meta name="theme-color" content="#0f0f10"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:site_name" content="${esc(site.name)}"><meta property="og:title" content="${esc(ogTitle || title || site.name)}"><meta property="og:description" content="${esc(ogDescription ?? description)}"><meta property="og:url" content="${canonical}">${image ? `<meta property="og:image" content="${base}${image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">` : ''}<script>${headScript}</script><style>${css}</style><script type="module" src="/assets/${jsName}"></script></head><body${solo ? ' class="solo"' : ''}>${solo ? body : `<a class="skip" href="#main">Skip to content</a>${header(current, { sizeToggle })}<main id="main" class="wrap">${body}</main>${footer()}`}</body></html>`;
 }
 
 const out = [];
@@ -187,7 +198,7 @@ const emit = (path, html) => out.push([path, html]);
 const totalLine = `${plural(photos.length, 'photo')} · ${plural(albums.length, 'album')}`;
 
 emit('/', page({
-  path: '/', current: 'home', image: favorites[0],
+  path: '/', current: 'home', image: DAILY,
   description: `${site.name}: ${site.tagline}`,
   body: `<section class="intro"><h1>${esc(site.name)}</h1><p>${esc(site.tagline)}</p></section>
 <section aria-labelledby="ph"><a class="door" href="/photos/"><b id="ph">Photography →</b><span class="muted">${totalLine}</span></a>${await favStrip()}</section>`,
@@ -196,7 +207,7 @@ emit('/', page({
 const indexCol = (id, title, items) => `<section><h2 class="lbl" id="${id}">${title}</h2><ul>${items.join('')}</ul></section>`;
 const latest = albums[0];
 emit('/photos/', page({
-  path: '/photos/', current: 'photos', image: favorites[0], sizeToggle: true, title: 'Photography',
+  path: '/photos/', current: 'photos', image: DAILY, sizeToggle: true, title: 'Photography', ogTitle: PHOTO_OG, ogDescription: totalLine,
   description: `Photography by ${site.name}: ${albums.map((a) => a.title).join(', ')}, and the night sky.`,
   body: `<h1 class="head" style="padding-bottom:0"><span class="lbl">Photography</span></h1>
 <div class="sec"><h2 class="lbl">Favorites</h2><a href="/photos/favorites/" class="muted">All ${favorites.length} favorites →</a></div>${await favStrip()}
@@ -204,13 +215,14 @@ emit('/photos/', page({
 <div class="sec"><h2 class="lbl">Latest · <a href="${latest.url}">${esc(latest.title)}</a></h2><span class="muted">${esc(fmtRange(latest.start, latest.end))}</span></div>${grid(latest.photos, { eager: 0 })}<a class="more" href="/photos/all/">All ${photos.length} photos →</a>`,
 }));
 
-const listPage = ({ path, title, kicker, sub, list, description, image, current, groups }) => emit(path, page({
-  path, title, description, image: image || list[0], current, sizeToggle: true,
+const listPage = ({ path, title, kicker, sub, list, description, image, current, groups, ogTitle, ogDescription }) => emit(path, page({
+  path, title, description, current, sizeToggle: true, ogTitle, ogDescription,
+  image: typeof image === 'string' ? image : cardFor(image || list[0]),
   body: `<div class="head">${kicker ? `<span class="lbl">${kicker}</span>` : ''}<h1>${esc(title)}</h1>${sub || ''}</div>${groups ? groups.map((g) => `<div class="grp"><h2 class="lbl">${g.label}</h2></div>${grid(g.list, { eager: 0 })}`).join('') : grid(list)}`,
 }));
 
-listPage({ path: '/photos/favorites/', title: 'Favorites', kicker: 'Photography', list: favorites, description: `Favorite photographs by ${site.name}.` });
-listPage({ path: '/photos/all/', title: 'All photos', kicker: 'Photography', list: byNewest, sub: `<p class="muted">${totalLine}, newest first.</p>`, description: `Every photograph on ${site.name}'s site, newest first.` });
+listPage({ path: '/photos/favorites/', title: 'Favorites', kicker: 'Photography', list: favorites, description: `Favorite photographs by ${site.name}.`, image: DAILY, ogTitle: PHOTO_OG, ogDescription: `${plural(favorites.length, 'favorite')}` });
+listPage({ path: '/photos/all/', title: 'All photos', kicker: 'Photography', list: byNewest, sub: `<p class="muted">${totalLine}, newest first.</p>`, description: `Every photograph on ${site.name}'s site, newest first.`, image: DAILY, ogTitle: PHOTO_OG, ogDescription: totalLine });
 
 for (const a of albums) {
   const where = a.places.map((pl) => `<a href="/places/${pl.slug}/">${esc(pl.title)}</a>`).join(', ');
@@ -267,9 +279,13 @@ const dotSvg = dots.map((d) => {
   return `<a href="${href}" aria-label="${esc(label)}"><circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(4 + Math.sqrt(n) * 1.6).toFixed(1)}"><title>${esc(label)}</title></circle></a>`;
 }).join('');
 
+const STATES = { UT: 'Utah', CA: 'California', NV: 'Nevada', AZ: 'Arizona', OR: 'Oregon', WA: 'Washington', CO: 'Colorado', ID: 'Idaho', WY: 'Wyoming', MT: 'Montana', NM: 'New Mexico', TX: 'Texas', NY: 'New York', MA: 'Massachusetts', HI: 'Hawaii', AK: 'Alaska' };
+const stateNames = [...new Set(placeList.map((pl) => pl.region?.state).filter(Boolean))].map((c) => STATES[c] || c);
+const listWords = (a) => (a.length < 3 ? a.join(' and ') : `${a.slice(0, -1).join(', ')}, and ${a.at(-1)}`);
 emit('/places/', page({
-  path: '/places/', title: 'Places', current: 'places',
+  path: '/places/', title: 'Places', current: 'places', image: '/og/places.png',
   description: `Where ${site.name}'s photographs were taken.`,
+  ogDescription: `${plural(placeList.length, 'place')}${stateNames.length ? ` across ${listWords(stateNames)}` : ''}.`,
   body: `<div class="head"><span class="lbl">Photography</span><h1>Places</h1><p class="muted">${plural(placeList.length, 'place')} in ${plural(byRegion.size, 'region')}.</p></div><figure class="map"><svg viewBox="0 0 975 610" role="group" aria-label="Map of the United States with a dot for each place">${usMap}<g class="dots">${dotSvg}</g></svg></figure><div class="index" id="place-list">${[...byRegion].map(([r, list]) => indexCol(regionId(r), `${esc(r)}${list[0].region ? `, ${list[0].region.state}` : ''}`, list.map((pl) => `<li><a href="${pl.url}" data-place="${pl.slug}"><span>${esc(pl.title)}${pl.city && pl.city !== pl.title ? `<small>${esc(pl.city)}</small>` : ''}</span><span class="n">${pl.photos.length}</span></a></li>`))).join('')}</div>`,
 }));
 for (const pl of placeList) {
@@ -295,7 +311,7 @@ for (const p of photos) {
   const r = p.width / p.height;
   const sizes = `(min-aspect-ratio: ${p.width}/${p.height}) calc(100dvh * ${r.toFixed(4)}), 100vw`;
   emit(p.url, page({
-    path: p.url, solo: true, image: p,
+    path: p.url, solo: true, image: cardFor(p),
     title: p.title || p.alt.replace(/\.$/, ''),
     description: p.alt,
     body: `<main><figure class="shot" data-id="${p.id}"><img src="/${big.src}" srcset="${srcset(p)}" sizes="${sizes}" width="${big.w}" height="${big.h}" alt="${esc(p.alt)}" fetchpriority="high" style="background-image:url(${p.placeholder});background-size:contain;background-position:center;background-repeat:no-repeat">${caption(p)}</figure><nav class="pn" aria-label="Photos">${p.prev ? `<a rel="prev" href="${p.prev.url}" aria-label="Previous photo">←</a>` : ''}${p.next ? `<a rel="next" href="${p.next.url}" aria-label="Next photo">→</a>` : ''}</nav></main>`,
@@ -309,7 +325,7 @@ emit('/404.html', page({
 
 // ---------- write ----------
 // Remove pages from earlier builds (everything generated except photos/ and _headers).
-const KEEP = new Set(['photos', '_headers']);
+const KEEP = new Set(['photos', '_headers', 'og']);
 for (const entry of await readdir(SITE)) if (!KEEP.has(entry)) await rm(join(SITE, entry), { recursive: true, force: true });
 
 for (const [path, html] of out) {
@@ -318,6 +334,21 @@ for (const [path, html] of out) {
   await writeFile(file, html);
 }
 await mkdir(join(SITE, 'assets'), { recursive: true });
+
+// Link-preview cards. Photo cards are named by content hash and only made once.
+const BG = '#0f0f10';
+await mkdir(join(SITE, 'og/p'), { recursive: true });
+for (const [path, p] of cards) {
+  const file = join(SITE, path);
+  if (existsSync(file)) continue;
+  const fitted = await sharp(join(SITE, p.outputs.at(-1).src)).resize(1200, 630, { fit: 'inside' }).toBuffer();
+  await sharp({ create: { width: 1200, height: 630, channels: 3, background: BG } })
+    .composite([{ input: fitted, gravity: 'center' }]).jpeg({ quality: 84, mozjpeg: true }).toFile(file);
+}
+for (const f of await readdir(join(SITE, 'og/p'))) if (!cards.has(`og/p/${f}`)) await rm(join(SITE, 'og/p', f));
+await writeFile(join(SITE, 'og/favorites.json'), JSON.stringify(favorites.map(cardFor)) + '\n');
+const mapSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="${BG}"/><svg x="60" y="25" width="1080" height="580" viewBox="0 0 975 610"><style>.land{fill:#232327}.borders{fill:none;stroke:#3a3a40;stroke-width:1.2}circle{fill:#f2b24c;stroke:${BG};stroke-width:2}</style>${usMap}${dots.map((d) => `<circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(5 + Math.sqrt(d.places.reduce((t, pl) => t + pl.photos.length, 0)) * 2).toFixed(1)}"/>`).join('')}</svg></svg>`;
+await sharp(Buffer.from(mapSvg)).png({ palette: true }).toFile(join(SITE, 'og/places.png'));
 await writeFile(join(SITE, 'assets', jsName), js);
 await writeFile(join(SITE, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#0f0f10"/><circle cx="16" cy="16" r="7" fill="none" stroke="#e8e6e3" stroke-width="2.5"/><circle cx="23.5" cy="8.5" r="1.6" fill="#f2b24c"/></svg>`);
 await writeFile(join(SITE, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${site.url.replace(/\/$/, '')}/sitemap.xml\n`);
