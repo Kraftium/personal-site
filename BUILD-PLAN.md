@@ -1,18 +1,18 @@
 # Build plan
 
-Short plan for turning DESIGN.md into the site. Each phase is a few small commits on a branch, opened as a PR for your review. Nothing gets built until you approve this.
+Short plan for turning DESIGN.md into the site. Each phase is a few small commits, pushed as they land.
 
-## Decisions I need from you
+Approved by Aidan on 2026-10-23.
 
-1. **Cloudflare output directory.** The project rules say output dir `/`, which publishes the whole repo root: `scripts/`, `content/`, `DESIGN.md`, `package.json`. Harmless, but sloppy and it counts toward the file limit. **I recommend a committed `site/` folder as the output dir** (still no build step on Cloudflare). Keep `/` or switch to `site/`?
-2. **Dependencies.** `sharp` is already approved. I'd also add, as dev-only tools that never ship to visitors:
-   - `exif-reader` (~10 KB, no deps) to parse EXIF from the buffer sharp returns. The alternative is a hand-written parser, which is more code to maintain.
-   - `lighthouse` + `playwright` (Chromium) to run Lighthouse and take mobile/desktop screenshots from one command.
-3. **Name in the header** and the one line about you for `/`. "Aidan" alone, or first and last name?
+## Decisions
+
+1. **Output directory is `site/`**, committed. Cloudflare Pages: build command empty, output dir `site`.
+2. **Dependencies** (dev-only, never shipped to visitors): `sharp`, `exif-reader`, and `lighthouse` + `playwright-core` for automated checks.
+3. **Name:** "Aidan Kelley". Small commits are pushed as they land.
 
 ## How you'll add photos (target workflow)
 
-1. Export from Lightroom into `Desktop\Export\<YYYY-MM Place>\` (astro: `Astrophotography\M31 2026-10-19.jpg`).
+1. Export from Lightroom into `Desktop\Export\<Place>\` (one folder per trip; astro: `Astrophotography\M31 2026-10-19.jpg`; loose photos at the top level).
 2. In the repo: `npm run photos`. This reads the folder, makes the WebP sizes for new or changed photos only, and adds a stub entry for each new photo to `content/photos.json`.
 3. Fill in alt text, collections, favorite, and location for the new entries (the command lists what's missing).
 4. `npm run build`, then commit and push. Cloudflare deploys.
@@ -25,7 +25,7 @@ Short plan for turning DESIGN.md into the site. Each phase is a few small commit
 `.gitignore` (originals, node_modules), `package.json` with `photos`/`build`/`check` scripts, `_headers`, README with the workflow above, DESIGN.md.
 
 **1. Image pipeline** (`scripts/build-images.mjs`)
-- Walk `originals/`: folder = album, `_singles` = no album, `Astrophotography` = Deep Sky.
+- Walk `originals/`: folder = album, files at the top level = no album, `Astrophotography` = Deep Sky.
 - Read EXIF (capture time, camera, lens, exposure, ISO, focal length) before stripping; astro date and target from the filename; flag files with no date.
 - Write 400/900/1600w WebP (q80, q88 for astro), tiny blur placeholder, dominant color. sRGB, auto-rotated, metadata stripped.
 - Incremental: skip files whose size + mtime + settings hash haven't changed.
@@ -46,8 +46,8 @@ Simplified US SVG generated once into the repo; dots placed by a small built-in 
 **6. QA and deploy**
 `npm run check`: Lighthouse mobile on `/`, `/photos/`, an album, a collection, a photo page, and Places (all must score 100); screenshots at 390px and 1440px; link checker; budget check on JS/CSS/HTML sizes. Then connect the repo in Cloudflare Pages (build command empty, output dir per decision 1).
 
-**7. Later: easter egg**
-Night sky hint, then observatory mode, per DESIGN.md section 9, each verified to add nothing to the main-path Lighthouse run.
+**7. Later: easter eggs**
+Night sky hint, observatory mode, and the Oct 7 birthday confetti, per DESIGN.md section 9, each verified to add nothing to the main-path Lighthouse run.
 
 ## What I won't do without asking
-Add other dependencies, change the design direction, push to `main`, or touch your Export folder (read-only).
+Change the design direction, merge to `main`, or write to your Export folder (read-only).

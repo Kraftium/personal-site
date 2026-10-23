@@ -1,6 +1,6 @@
 # DESIGN.md
 
-Source of truth for the look and feel of Aidan's photography site. If code and this file disagree, this file wins (or gets updated first).
+Source of truth for the look and feel of Aidan Kelley's personal site and photography gallery. If code and this file disagree, this file wins (or gets updated first).
 
 ## 1. Vibe
 
@@ -49,7 +49,7 @@ Dates are written `Jul 4–9, 2026`. Numbers in spec lines use `font-variant-num
 
 ### Page frame
 - Max content width 1600px, centered. Side padding 24px desktop, 12px phone.
-- **Header** (single line, 48px): left = name (links to `/`) and `/ Photography` breadcrumb; right = `Albums · Collections · Places` and the **size toggle**. On phones the nav collapses to a single "Menu" disclosure (native `<details>`, no JS).
+- **Header** (single line, 48px): left = "Aidan Kelley" (links to `/`) and `/ Photography` breadcrumb; right = `Albums · Collections · Places` and the **size toggle**. On phones the nav collapses to a single "Menu" disclosure (native `<details>`, no JS).
 - **Footer**: one muted line (© year, Instagram link). Reserved spot for a future settings link.
 
 ### Grid
@@ -180,6 +180,9 @@ Applies to the **Deep Sky** collection (`/c/deep-sky/`) and the photo viewer for
 - `observatory.css` + `observatory.js` (budget ≤ 12 KB total, star data included) load only after the hold completes.
 - Reserved hooks: `html[data-theme]` for the theme switch and `data-collection="deep-sky"` on the Deep Sky page. The star canvas is created by the script, not shipped in the HTML.
 
+### Future egg: birthday (not built yet)
+On **October 7** (Aidan's birthday, visitor local date), a small one-time confetti burst on `/`. Same rules as above: an inline date check of a few bytes, and the confetti script loads only on that day, after `load`, and never with reduced motion.
+
 ## 10. Themes (future)
 
 All visual values are tokens (section 2 plus spacing and font tokens). A future settings page can offer themes (light, pixel/retro, etc.):
@@ -231,7 +234,7 @@ Caching via `_headers`: generated images and versioned JS/CSS get `Cache-Control
 ## 15. Content structure
 
 ### Albums (dated trips)
-One folder per outing in the source photo folder, named `YYYY-MM Place`. Folder name = album; an optional `album.json` overrides title, dates, locations, and description.
+One folder per outing in the source photo folder, named after the place (`Park City`). A `YYYY-MM ` prefix is optional and stripped from the title; album dates always come from the photos' EXIF. If the same place gets a second trip, give it its own folder (`Park City 2027`). An optional `album.json` in the folder overrides title, dates, locations, and description.
 
 Current set (57 photos):
 
@@ -245,7 +248,7 @@ Current set (57 photos):
 | Little Cottonwood | Oct 4, 2026 | 6 | Utah |
 | Angels Camp | Oct 10–11, 2026 | 4 | Gold Country |
 
-Loose photos with no album (2021 peaks, 2025 stained glass) live in `_singles`. They appear in collections, years, and all photos.
+Loose photos with no album (2021 peaks, 2025 stained glass) sit directly in the top of the source folder, outside any album folder. They appear in collections, years, and all photos.
 
 ### Collections (timeless, by subject)
 Tags in the content file; a photo can be in any number. Capture date hidden in the UI.

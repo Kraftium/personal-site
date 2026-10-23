@@ -1,0 +1,19 @@
+{
+  "name": "personal-site",
+  "private": true,
+  "type": "module",
+  "description": "Aidan Kelley's photography site. Static HTML generated locally, served from site/ by Cloudflare Pages.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "photos": "node scripts/build-images.mjs",
+    "build": "node scripts/build-site.mjs",
+    "serve": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "exif-reader": "^2.0.3",
+    "sharp": "^0.35.5"
+  }
+}
