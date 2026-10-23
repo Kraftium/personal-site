@@ -53,7 +53,9 @@ Aidan Kelley's personal site and photography gallery. Plain HTML/CSS and a littl
 | `npm run check` | Lighthouse (mobile), size budgets, and screenshots into `.lighthouse/` |
 | `node scripts/build-map.mjs` | Regenerates the US outline for the Places map (rarely needed) |
 
-## Cloudflare Pages settings
+## Hosting (Cloudflare Workers)
 
-- Build command: *(empty)*
-- Build output directory: `site`
+The site is a Cloudflare Worker that only serves static files. `wrangler.jsonc` points it at `site/`, so pushing to `main` redeploys. No build runs on Cloudflare.
+
+- Live at https://www.luksem.workers.dev (change `url` in `content/site.json` if the address changes, then rebuild)
+- Caching comes from `site/_headers`

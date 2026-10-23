@@ -224,8 +224,8 @@ for (const a of albums) {
 for (const c of liveCollections) {
   listPage({
     path: c.url, title: c.title, kicker: 'Collection', current: 'collections', list: c.photos,
-    sub: c.description ? `<p class="muted">${esc(c.description)}</p>` : '',
-    description: `${c.title}: ${c.description || ''} ${plural(c.photos.length, 'photo')} by ${site.name}.`.trim(),
+    sub: `<p class="muted">${plural(c.photos.length, 'photo')}</p>${c.description ? `<p>${esc(c.description)}</p>` : ''}`,
+    description: `${c.title}: ${plural(c.photos.length, 'photo')} by ${site.name}.`,
     image: c.photos.find((p) => p.favorite),
   });
 }
