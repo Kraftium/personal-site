@@ -1,0 +1,19 @@
+{
+  "_help": "Catalog id -> common name. Offline lookup for Deep Sky photos; add new targets as you shoot them.",
+  "M1": "Crab Nebula", "M8": "Lagoon Nebula", "M13": "Hercules Cluster", "M16": "Eagle Nebula", "M17": "Omega Nebula",
+  "M20": "Trifid Nebula", "M27": "Dumbbell Nebula", "M31": "Andromeda Galaxy", "M33": "Triangulum Galaxy",
+  "M42": "Orion Nebula", "M44": "Beehive Cluster", "M45": "Pleiades", "M51": "Whirlpool Galaxy", "M57": "Ring Nebula",
+  "M63": "Sunflower Galaxy", "M64": "Black Eye Galaxy", "M74": "Phantom Galaxy", "M76": "Little Dumbbell Nebula",
+  "M78": "Casper Nebula", "M81": "Bode's Galaxy", "M82": "Cigar Galaxy", "M83": "Southern Pinwheel Galaxy",
+  "M97": "Owl Nebula", "M101": "Pinwheel Galaxy", "M104": "Sombrero Galaxy", "M106": "M106 Galaxy",
+  "NGC 281": "Pacman Nebula", "NGC 869": "Double Cluster", "NGC 884": "Double Cluster", "NGC 891": "Silver Sliver Galaxy",
+  "NGC 1499": "California Nebula", "NGC 1976": "Orion Nebula", "NGC 2024": "Flame Nebula", "NGC 2237": "Rosette Nebula",
+  "NGC 2244": "Rosette Cluster", "NGC 2264": "Cone Nebula", "NGC 2392": "Eskimo Nebula", "NGC 3372": "Carina Nebula",
+  "NGC 4565": "Needle Galaxy", "NGC 6888": "Crescent Nebula", "NGC 6960": "Western Veil (Witch's Broom)",
+  "NGC 6992": "Eastern Veil Nebula", "NGC 6995": "Bat Nebula", "NGC 7000": "North America Nebula",
+  "NGC 7023": "Iris Nebula", "NGC 7293": "Helix Nebula", "NGC 7380": "Wizard Nebula", "NGC 7635": "Bubble Nebula",
+  "NGC 7662": "Blue Snowball Nebula", "IC 405": "Flaming Star Nebula", "IC 410": "Tadpoles Nebula",
+  "IC 434": "Horsehead Nebula", "IC 443": "Jellyfish Nebula", "IC 1318": "Sadr Region", "IC 1396": "Elephant's Trunk Nebula",
+  "IC 1805": "Heart Nebula", "IC 1848": "Soul Nebula", "IC 2118": "Witch Head Nebula", "IC 5070": "Pelican Nebula",
+  "IC 5146": "Cocoon Nebula", "SH2-129": "Flying Bat Nebula", "SH2-240": "Spaghetti Nebula"
+}

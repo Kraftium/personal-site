@@ -1,0 +1,10 @@
+{
+  "_help": "Keyed by album slug (the folder name without the YYYY-MM prefix, lowercased). Every field is optional. clockOffsetHours shifts the camera's EXIF times to local time for display.",
+  "park-city": { "region": "utah", "clockOffsetHours": -2 },
+  "san-pablo-reservoir": { "region": "bay-area", "clockOffsetHours": -3 },
+  "san-francisco": { "region": "bay-area", "clockOffsetHours": -3 },
+  "san-diego-big-bear-lake": { "title": "San Diego & Big Bear", "region": "socal", "clockOffsetHours": -3 },
+  "salt-lake-city": { "region": "utah", "clockOffsetHours": -2 },
+  "little-cottonwood": { "title": "Little Cottonwood Canyon", "region": "utah", "clockOffsetHours": -2 },
+  "angels-camp": { "title": "Angels Camp", "region": "gold-country", "clockOffsetHours": -3 }
+}
