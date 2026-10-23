@@ -1,0 +1,2300 @@
+{
+ "albums": [
+  {
+   "slug": "angels-camp",
+   "title": "Angel's Camp",
+   "folder": "2026-10 Angel's Camp",
+   "photos": [
+    "20261010-dsc3711",
+    "20261010-dsc3744",
+    "20261011-dsc3770",
+    "20261011-dsc3785"
+   ],
+   "start": "2026-10-10",
+   "end": "2026-10-11"
+  },
+  {
+   "slug": "little-cottonwood",
+   "title": "Little Cottonwood",
+   "folder": "2026-10 Little Cottonwood",
+   "photos": [
+    "20261004-dsc3639",
+    "20261004-dsc3648",
+    "20261004-dsc3650",
+    "20261004-dsc3651",
+    "20261004-dsc3669",
+    "20261004-dsc3675"
+   ],
+   "start": "2026-10-04",
+   "end": "2026-10-04"
+  },
+  {
+   "slug": "salt-lake-city",
+   "title": "Salt Lake City",
+   "folder": "2026-09 Salt Lake City",
+   "photos": [
+    "20260907-dsc3580",
+    "20260907-dsc3590",
+    "20260907-dsc3596",
+    "20260907-dsc3600"
+   ],
+   "start": "2026-09-07",
+   "end": "2026-09-07"
+  },
+  {
+   "slug": "san-diego-big-bear-lake",
+   "title": "San Diego & Big Bear Lake",
+   "folder": "2026-07 San Diego & Big Bear Lake",
+   "photos": [
+    "20260704-dsc3403",
+    "20260704-dsc3423",
+    "20260705-dsc3447",
+    "20260705-dsc3455",
+    "20260705-dsc3459",
+    "20260705-dsc3469",
+    "20260705-dsc3486",
+    "20260705-dsc3487",
+    "20260705-dsc3493",
+    "20260706-dsc3524",
+    "20260706-dsc3537",
+    "20260709-dsc3557",
+    "20260709-dsc3563"
+   ],
+   "start": "2026-07-04",
+   "end": "2026-07-09"
+  },
+  {
+   "slug": "san-francisco",
+   "title": "San Francisco",
+   "folder": "2026-06 San Francisco",
+   "photos": [
+    "20260625-dsc3280",
+    "20260625-dsc3295",
+    "20260625-dsc3316",
+    "20260625-dsc3322",
+    "20260625-dsc3331",
+    "20260625-dsc3348",
+    "20260625-dsc3368"
+   ],
+   "start": "2026-06-25",
+   "end": "2026-06-25"
+  },
+  {
+   "slug": "san-pablo-reservoir",
+   "title": "San Pablo Reservoir",
+   "folder": "2026-05 San Pablo Reservoir",
+   "photos": [
+    "20260503-dsc3247",
+    "20260503-dsc3279"
+   ],
+   "start": "2026-05-03",
+   "end": "2026-05-03"
+  },
+  {
+   "slug": "park-city",
+   "title": "Park City",
+   "folder": "2026-03 Park City",
+   "photos": [
+    "20260327-dsc3179",
+    "20260327-dsc3188",
+    "20260327-dsc3195",
+    "20260327-dsc3196",
+    "20260327-dsc3199",
+    "20260327-dsc3201",
+    "20260329-dsc3209",
+    "20260329-dsc3213",
+    "20260329-dsc3223"
+   ],
+   "start": "2026-03-27",
+   "end": "2026-03-29"
+  }
+ ],
+ "photos": [
+  {
+   "stem": "DSC_1929",
+   "source": "DSC_1929.jpg",
+   "albumFolder": null,
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "e7b8633638",
+   "camera": "Nikon D3500",
+   "lens": "18.0-55.0 mm f/3.5-5.6",
+   "exposure": 0.00125,
+   "fNumber": 9,
+   "iso": 800,
+   "focal": 55,
+   "date": "2021-06-10T10:13:26",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQABAAA4BaJZwAAubU9yf1k7AA/ExsYvFVVR/CkE5aX1rnruq3hKKGlwjb7PsCR9MbQm6yAIAAAA==",
+   "color": "#60656c",
+   "id": "20210610-dsc1929",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20210610-dsc1929/e7b8633638-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20210610-dsc1929/e7b8633638-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20210610-dsc1929/e7b8633638-1600.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "DSC_2967",
+   "source": "DSC_2967.jpg",
+   "albumFolder": null,
+   "astro": false,
+   "width": 3343,
+   "height": 3343,
+   "hash": "ea6615c93e",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.025,
+   "fNumber": 3.5,
+   "iso": 800,
+   "focal": 18,
+   "date": "2025-10-06T09:13:23",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQABAAA4BaJZQC7AYulvahdaMwAAD++FIfnW0tg8u4Tz8U/RBz1d/nvvM8cUzjmqz6SN3K9htiCfCy94BHS2fxh5Ke6d8Fn3+5D9aM1xgMAqZkK25pSIVFv89PENnTAAA=",
+   "color": "#2b2223",
+   "id": "20251006-dsc2967",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20251006-dsc2967/ea6615c93e-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20251006-dsc2967/ea6615c93e-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20251006-dsc2967/ea6615c93e-1600.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "DSC_3179",
+   "source": "2026-03 Park City/DSC_3179.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "0073c70588",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 3.5,
+   "iso": 500,
+   "focal": 18,
+   "date": "2026-03-27T16:56:42",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JYwAAOovW1eXxq1w6FYAAziM5R3TRkGMG8nvt9Y7uvCLH2+494kbITY63fSQUtpvNN1j/NGVDfPRau7O635u6Q0TZKU+jucnYKJaU26mXQbLdZhaI4FuwmiDVy8rwAAA=",
+   "color": "#776b5c",
+   "id": "20260327-dsc3179",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260327-dsc3179/0073c70588-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260327-dsc3179/0073c70588-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260327-dsc3179/0073c70588-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3188",
+   "source": "2026-03 Park City/DSC_3188.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "d45a5f27d2",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 3.5,
+   "iso": 360,
+   "focal": 18,
+   "date": "2026-03-27T17:43:17",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoQABgAPu1iqU2ppaQiMAgBMB2JYwCsACES+kn8SEt+C6lOAAD+6TuTBKwR3VVoVImwbNY4nQWLYVM1QbD9bfYSaWWuF8+57yuPqCPEKl6irWAvnB43PghpkotxpAHNeGU3cQmHzBRfAAAA",
+   "color": "#7c736b",
+   "id": "20260327-dsc3188",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260327-dsc3188/d45a5f27d2-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260327-dsc3188/d45a5f27d2-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260327-dsc3188/d45a5f27d2-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3195",
+   "source": "2026-03 Park City/DSC_3195.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "5b685fe7b9",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0025,
+   "fNumber": 5.6,
+   "iso": 800,
+   "focal": 140,
+   "date": "2026-03-27T17:50:01",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADwAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JYwAFFtbnziWLjvGbzDBgAP6DekmDe1fOYkplW3g9xa3s+pTMmHMQ8VtvmVQoxM/EdblAazEv1/Or5M3DZ2r5vvx8HgXlo1YpMQEFGNUmR9G+FWIwKbv4wjBJE4KypO07m89HUMcwNNsmrZtK0DeyQpM1wl0aYIyr3ekBi+U6vRI8xk6dmG6GUEKGcBE8Mw+18WSTD+AAAA==",
+   "color": "#5b5351",
+   "id": "20260327-dsc3195",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260327-dsc3195/5b685fe7b9-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260327-dsc3195/5b685fe7b9-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260327-dsc3195/5b685fe7b9-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3196",
+   "source": "2026-03 Park City/DSC_3196.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "ab1171d082",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 3.5,
+   "iso": 720,
+   "focal": 18,
+   "date": "2026-03-27T17:51:30",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAgCdASoQABgAA4BaJQBOmUADZ6jwbd3wqydBHYAA4maSpg9u3i0lC4OfHUvB9zvnELzNozt6DZCMAh/bHggcwTXgxuMKE2ED/YIrTuGKWX74LxY8uCRxdPuD1AjZj3oN9JIyskgAAA==",
+   "color": "#958f82",
+   "id": "20260327-dsc3196",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260327-dsc3196/ab1171d082-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260327-dsc3196/ab1171d082-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260327-dsc3196/ab1171d082-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3199",
+   "source": "2026-03 Park City/DSC_3199.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "aa205a595f",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0003125,
+   "fNumber": 3.5,
+   "iso": 800,
+   "focal": 18,
+   "date": "2026-03-27T18:02:10",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JQBOgBCvWYAmoVLMTl3qrKoAA97RlXCpOX6riD+aBWoV2mtpT7CMZ6WvKWwJuoGqMUbDjBChwNAppKhMfH+iFk6QTHRaQa2XK4A2gStscW46Zy8jvvZJAAAA=",
+   "color": "#7c6f5c",
+   "id": "20260327-dsc3199",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260327-dsc3199/aa205a595f-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260327-dsc3199/aa205a595f-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260327-dsc3199/aa205a595f-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3201",
+   "source": "2026-03 Park City/DSC_3201.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "9719c975d0",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0005,
+   "fNumber": 5.6,
+   "iso": 800,
+   "focal": 140,
+   "date": "2026-03-27T18:13:36",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JYwDG9YxsnD7pLGK1eGX8AP7pBaIjkCFhIvOxFSJJpLROMzim2L4mNjD1CeloxXdpz9k4ZDOfhTsQio/W8QOUte+8tmlZDTHr6XX4Ac/JfpaG6/e65nBaHlGTX5VxYGaslveftWpmC0v1PkCdh6pw7Y13B8+i1AVfo17BeTXogOeQAAA=",
+   "color": "#4e4d4c",
+   "id": "20260327-dsc3201",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260327-dsc3201/9719c975d0-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260327-dsc3201/9719c975d0-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260327-dsc3201/9719c975d0-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3209",
+   "source": "2026-03 Park City/DSC_3209.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "0ef6a19cdb",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 3.5,
+   "iso": 500,
+   "focal": 18,
+   "date": "2026-03-29T13:47:27",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwAwCdASoQABgAPu1kqk2ppaQiMAgBMB2JYgCdMoACgvVUeV69kbSAAM3R9t6XvgaT7xu2GrQoESialp9zbLCZSmR5qCce9LVehWqrOFziEp63ERdBtKLiansDMdP86GCdsLWW8Oi9hXhvDv1RMpHuvsMQ8fyYo6h8HlLNaJDTafyWKhEy+mAA",
+   "color": "#827a64",
+   "id": "20260329-dsc3209",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260329-dsc3209/0ef6a19cdb-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260329-dsc3209/0ef6a19cdb-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260329-dsc3209/0ef6a19cdb-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3213",
+   "source": "2026-03 Park City/DSC_3213.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "ca79512a11",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 3.5,
+   "iso": 450,
+   "focal": 18,
+   "date": "2026-03-29T13:54:46",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAwCdASoQABgAPu1iqU2ppaOiMAgBMB2JYwC06CHVzATkeyPjOMAA/H+nhuP1p3KIGHjG+J5jDdl8FZvb2oZh/ODbghPt7DAWnIqjyq3JRczag0X8zT0A8lV0Dcfwzmme/QAA",
+   "color": "#918775",
+   "id": "20260329-dsc3213",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260329-dsc3213/ca79512a11-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260329-dsc3213/ca79512a11-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260329-dsc3213/ca79512a11-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3223",
+   "source": "2026-03 Park City/DSC_3223.jpg",
+   "albumFolder": "2026-03 Park City",
+   "astro": false,
+   "width": 4000,
+   "height": 6000,
+   "hash": "e73604526e",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0005,
+   "fNumber": 5.6,
+   "iso": 800,
+   "focal": 140,
+   "date": "2026-03-29T14:50:35",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JQBOgMX/Sece0Qdlx38atMl1CgAD+zdcj8EYg9iTzesRoeEvqdc6DxgDHOc/Wn3DX6Gzi7nDNqzj/lFIu+zCawlpBi9FcFwHxkKboKf6brryMFCoP27i7hHp7osbP0Zughm9EHbV0bvqGnx92UaIbFz1LaJNZcNdxz0M6vem/b8GyLVtlaW0kkTSW0AAA",
+   "color": "#676255",
+   "id": "20260329-dsc3223",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 600,
+     "src": "photos/20260329-dsc3223/e73604526e-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1350,
+     "src": "photos/20260329-dsc3223/e73604526e-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 2400,
+     "src": "photos/20260329-dsc3223/e73604526e-1600.webp"
+    }
+   ],
+   "album": "park-city"
+  },
+  {
+   "stem": "DSC_3247",
+   "source": "2026-05 San Pablo Reservoir/DSC_3247.jpg",
+   "albumFolder": "2026-05 San Pablo Reservoir",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "09111799a5",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 3.5,
+   "iso": 500,
+   "focal": 18,
+   "date": "2026-05-03T17:00:59",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQABAAA4BaJZAAAvZwDZXtgAD+55rtx0dbm4DBMJw68Q/nQuyAh7rOYhByc730uXzsOm1gsQon/YnCz6VzXdLlZv/4d6B+HAA=",
+   "color": "#85856e",
+   "id": "20260503-dsc3247",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260503-dsc3247/09111799a5-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260503-dsc3247/09111799a5-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260503-dsc3247/09111799a5-1600.webp"
+    }
+   ],
+   "album": "san-pablo-reservoir"
+  },
+  {
+   "stem": "DSC_3279",
+   "source": "2026-05 San Pablo Reservoir/DSC_3279.jpg",
+   "albumFolder": "2026-05 San Pablo Reservoir",
+   "astro": false,
+   "width": 3983,
+   "height": 3983,
+   "hash": "d1935f7239",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 4.2,
+   "iso": 560,
+   "focal": 38,
+   "date": "2026-05-03T17:43:34",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQABAAA4BaJZwAAvoW8SW8ywAAyz1+fLZQE613NyS7oTozmqCajaBaBZ6D7IQfYPyMMVNqTltvblpIGD9uqjOVRyH9nfPgAAA=",
+   "color": "#87857f",
+   "id": "20260503-dsc3279",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260503-dsc3279/d1935f7239-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260503-dsc3279/d1935f7239-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260503-dsc3279/d1935f7239-1600.webp"
+    }
+   ],
+   "album": "san-pablo-reservoir"
+  },
+  {
+   "stem": "DSC_3280",
+   "source": "2026-06 San Francisco/DSC_3280.jpg",
+   "albumFolder": "2026-06 San Francisco",
+   "astro": false,
+   "width": 3403,
+   "height": 3403,
+   "hash": "61cf0322fa",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0003125,
+   "fNumber": 4,
+   "iso": 800,
+   "focal": 30,
+   "date": "2026-06-25T19:43:35",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQABAAA4BaJbACdADz4SQ5vGgA/t2ckWQ5haAoVVAbuBWSPSijiJzvfhl+baJ8e0r/Xv9SWPeReEsFgn6x4MHt4Ils2/JQ7bTu2QAA",
+   "color": "#405778",
+   "id": "20260625-dsc3280",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260625-dsc3280/61cf0322fa-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260625-dsc3280/61cf0322fa-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260625-dsc3280/61cf0322fa-1600.webp"
+    }
+   ],
+   "album": "san-francisco"
+  },
+  {
+   "stem": "DSC_3295",
+   "source": "2026-06 San Francisco/DSC_3295.jpg",
+   "albumFolder": "2026-06 San Francisco",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "08c005c573",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 3.5,
+   "iso": 100,
+   "focal": 18,
+   "date": "2026-06-25T20:17:46",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQABAAA4BaJQBOgBxvt0BPJR+AAP7Qw7/SKufm3g3C2uG2oDkwuMdF8fyyVPKf+h+st0v5NiwkembAEYjRPpHTswpsYsvZdcAAAA==",
+   "color": "#6a727d",
+   "id": "20260625-dsc3295",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260625-dsc3295/08c005c573-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260625-dsc3295/08c005c573-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260625-dsc3295/08c005c573-1600.webp"
+    }
+   ],
+   "album": "san-francisco"
+  },
+  {
+   "stem": "DSC_3316",
+   "source": "2026-06 San Francisco/DSC_3316.jpg",
+   "albumFolder": "2026-06 San Francisco",
+   "astro": false,
+   "width": 3331,
+   "height": 3331,
+   "hash": "9f00154d0f",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0015625,
+   "fNumber": 5.6,
+   "iso": 800,
+   "focal": 140,
+   "date": "2026-06-25T20:54:59",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQABAAA4BaJZQCdAD6FjX0UqBAAM4/Eq9ytwlIyMHGeMDPl22vInnHIMFINz1OLXkOrE3OKvgwhTbTKdMWj29ypGyuoMTYfnyDLyaLgQwSV5AjVFSkREgA",
+   "color": "#6e6e6e",
+   "id": "20260625-dsc3316",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260625-dsc3316/9f00154d0f-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260625-dsc3316/9f00154d0f-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260625-dsc3316/9f00154d0f-1600.webp"
+    }
+   ],
+   "album": "san-francisco"
+  },
+  {
+   "stem": "DSC_3322",
+   "source": "2026-06 San Francisco/DSC_3322.jpg",
+   "albumFolder": "2026-06 San Francisco",
+   "astro": false,
+   "width": 3331,
+   "height": 3331,
+   "hash": "e8b9335665",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.001,
+   "fNumber": 4.2,
+   "iso": 800,
+   "focal": 35,
+   "date": "2026-06-25T22:41:32",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQABAAA4BaJZwAAqolsHeAANqnBRb4M5adY2SSDm9kpFSiBf+zqH6iMO7W8XY2dp/K8ciJMukojCbeSVEnJoUayFAAAA==",
+   "color": "#7d7e82",
+   "id": "20260625-dsc3322",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260625-dsc3322/e8b9335665-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260625-dsc3322/e8b9335665-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260625-dsc3322/e8b9335665-1600.webp"
+    }
+   ],
+   "album": "san-francisco"
+  },
+  {
+   "stem": "DSC_3331",
+   "source": "2026-06 San Francisco/DSC_3331.jpg",
+   "albumFolder": "2026-06 San Francisco",
+   "astro": false,
+   "width": 3714,
+   "height": 3714,
+   "hash": "d22e144bd8",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.001,
+   "fNumber": 4.5,
+   "iso": 800,
+   "focal": 42,
+   "date": "2026-06-25T22:52:06",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQABAAA4BaJZwAAuQyYMWtYADh86KQMmwaAsM87Hhih4llJfXrtA5/freAAA==",
+   "color": "#7f8182",
+   "id": "20260625-dsc3331",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260625-dsc3331/d22e144bd8-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260625-dsc3331/d22e144bd8-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260625-dsc3331/d22e144bd8-1600.webp"
+    }
+   ],
+   "album": "san-francisco"
+  },
+  {
+   "stem": "DSC_3348",
+   "source": "2026-06 San Francisco/DSC_3348.jpg",
+   "albumFolder": "2026-06 San Francisco",
+   "astro": false,
+   "width": 3930,
+   "height": 3930,
+   "hash": "648c1fc5e5",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.025,
+   "fNumber": 5,
+   "iso": 800,
+   "focal": 70,
+   "date": "2026-06-25T23:33:50",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQABAAA4BaJYwCdACxaR+5gADcV3D5Ka6iBgS1TrMsMd5TlGr8X0T4bHoCTMHdWlt0FSSgKVX2uD67XfdFe4SKIADiQA+gewAAAA==",
+   "color": "#59626d",
+   "id": "20260625-dsc3348",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260625-dsc3348/648c1fc5e5-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260625-dsc3348/648c1fc5e5-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260625-dsc3348/648c1fc5e5-1600.webp"
+    }
+   ],
+   "album": "san-francisco"
+  },
+  {
+   "stem": "DSC_3368",
+   "source": "2026-06 San Francisco/DSC_3368.jpg",
+   "albumFolder": "2026-06 San Francisco",
+   "astro": false,
+   "width": 3946,
+   "height": 3946,
+   "hash": "7ece9538cd",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.8,
+   "fNumber": 3.5,
+   "iso": 800,
+   "focal": 18,
+   "date": "2026-06-25T23:58:24",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQABAAA4BaJbACdAEfbhONnokAAPRQz8s1yRUAr2QJrVwXfcvnjdu/daVFQUS51V6AjweR2sUHHhbM2vGSP7AAAAA=",
+   "color": "#434a6a",
+   "id": "20260625-dsc3368",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260625-dsc3368/7ece9538cd-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260625-dsc3368/7ece9538cd-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260625-dsc3368/7ece9538cd-1600.webp"
+    }
+   ],
+   "album": "san-francisco"
+  },
+  {
+   "stem": "DSC_3403",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3403.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 3972,
+   "height": 3972,
+   "hash": "e785846312",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 4.5,
+   "iso": 560,
+   "focal": 45,
+   "date": "2026-07-04T18:08:16",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQABAAA4BaJZQAAsb2wL2/Dv0gANxN6mzensSTjx0hK3ywE7uxvBKhb39HlPP980LMEukbZxDJGIoJffdSc7BCexK7VeUnnusAAA==",
+   "color": "#626664",
+   "id": "20260704-dsc3403",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260704-dsc3403/e785846312-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260704-dsc3403/e785846312-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260704-dsc3403/e785846312-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3423",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3423.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "bbda794aac",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0008,
+   "fNumber": 6.3,
+   "iso": 800,
+   "focal": 140,
+   "date": "2026-07-04T18:31:01",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQABAAA4BaJbACdAywC2pBLQbAAP7r/5NwuQ4XFNwiTeIGVQa4mmqwFwhNSFOktucF4cUJKt6ht6kFhV0laaUMANT027ooJRDPIKBIxjo3u79HGwGLOFM5AAA=",
+   "color": "#81764b",
+   "id": "20260704-dsc3423",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260704-dsc3423/bbda794aac-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260704-dsc3423/bbda794aac-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260704-dsc3423/bbda794aac-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3447",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3447.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "26572ee850",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0015625,
+   "fNumber": 6.3,
+   "iso": 800,
+   "focal": 70,
+   "date": "2026-07-05T17:04:01",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwAQCdASoQABAAA4BaJZwAAQSa6AD+eT51Rmuo3a0Erk0yLLoSnyqFXjp8pWKH5M+XJmEP6B/bqwvWmkRuz30M4BLy1o9v2f2JPM1BQcuUAr+q7LdxE5cpGLBDDhzVKECAAA==",
+   "color": "#666a68",
+   "id": "20260705-dsc3447",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260705-dsc3447/26572ee850-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260705-dsc3447/26572ee850-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260705-dsc3447/26572ee850-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3455",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3455.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 3678,
+   "height": 3678,
+   "hash": "f4d6228fdf",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0015625,
+   "fNumber": 6.3,
+   "iso": 800,
+   "focal": 18,
+   "date": "2026-07-05T17:36:54",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwAgCdASoQABAAA4BaJbAC7AYsZy2SJ7vRgAD+5uXhGaNh8G4lVes7uvuSs9eKv6dH0+dl4Kd78wUBISFJfdlGBS1biTGuP07uY0tu/j59zHtNU2FdItCn/eoqrzex899p2rsxVxzUg9pP65bHw07f1nOsJ1i9TlaGu9IAAAA=",
+   "color": "#6d6b46",
+   "id": "20260705-dsc3455",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260705-dsc3455/f4d6228fdf-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260705-dsc3455/f4d6228fdf-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260705-dsc3455/f4d6228fdf-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3459",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3459.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "bb7bbf8c73",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.001,
+   "fNumber": 6.3,
+   "iso": 800,
+   "focal": 30,
+   "date": "2026-07-05T18:04:18",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQABAAA4BaJbACdABtWtgAAPcGe2wACSduLz/I70wMfJypmYL/ewdaeTZS+9fQGnybrE+O5KJ2a6qbTujreEgYN4Vsx5FjoAAAAA==",
+   "color": "#6e87ab",
+   "id": "20260705-dsc3459",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260705-dsc3459/bb7bbf8c73-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260705-dsc3459/bb7bbf8c73-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260705-dsc3459/bb7bbf8c73-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3469",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3469.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "1d55abd863",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.000625,
+   "fNumber": 6.3,
+   "iso": 800,
+   "focal": 140,
+   "date": "2026-07-05T18:51:53",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQABAAA4BaJZgCdAD2FdRQLADyVRFNPqHLNmhqtqxWiZC27KzNzrzi+WZwr2J44AA=",
+   "color": "#637743",
+   "id": "20260705-dsc3469",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260705-dsc3469/1d55abd863-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260705-dsc3469/1d55abd863-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260705-dsc3469/1d55abd863-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3486",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3486.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 3997,
+   "height": 3997,
+   "hash": "9d3eaa1339",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0005,
+   "fNumber": 6.3,
+   "iso": 800,
+   "focal": 30,
+   "date": "2026-07-05T18:59:19",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQABAAA4BaJbACdAEOez4ns9AA/pBBhWzom8tiXO5Cnx/nRd9QBP9Wf+hCnP9NuATiHwGxRiluPQcqkxXf6JJ/bz+Mxb9FdaePT/d+XG2AAA==",
+   "color": "#719299",
+   "id": "20260705-dsc3486",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260705-dsc3486/9d3eaa1339-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260705-dsc3486/9d3eaa1339-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260705-dsc3486/9d3eaa1339-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3487",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3487.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "7d7fadf591",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0015625,
+   "fNumber": 6.3,
+   "iso": 800,
+   "focal": 23,
+   "date": "2026-07-05T19:00:09",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQAgCdASoQABAAA4BaJbACdAEVbHyxbo0jpXgA/eEI4nAIn6FtjeU6ThTayDi79tRV9lmYXUxWxQTGKsdajN3Nt5GOtqkZPeilmB48JCO1Tda9NhrxMP41yaWs5nFMJ2M4R41PdQAAAA==",
+   "color": "#898c91",
+   "id": "20260705-dsc3487",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260705-dsc3487/7d7fadf591-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260705-dsc3487/7d7fadf591-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260705-dsc3487/7d7fadf591-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3493",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3493.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "f4c50fd653",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 6.3,
+   "iso": 800,
+   "focal": 66,
+   "date": "2026-07-05T20:44:35",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQABAAA4BaJagCdAD2PoSh/IAA+mbLkd7yR0VLBIKlynCFtdQFZ6BDGejfU3Oa2rrZgKb2LZZJfX1+we+vr/rR+RzvCZCSNVHVwGVgAAA=",
+   "color": "#6584a3",
+   "id": "20260705-dsc3493",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260705-dsc3493/f4c50fd653-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260705-dsc3493/f4c50fd653-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260705-dsc3493/f4c50fd653-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3524",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3524.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 3964,
+   "height": 3964,
+   "hash": "b143f50a56",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 7.1,
+   "iso": 280,
+   "focal": 24,
+   "date": "2026-07-06T22:42:39",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQABAAA4BaJZACdAEOooSPbAD+8tkL+J0uR+t7YdlPw4hrj2kRxX78o0P5MA7UHmI0SiI2tx8ExWhFndqzKgAA",
+   "color": "#3f3427",
+   "id": "20260706-dsc3524",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260706-dsc3524/b143f50a56-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260706-dsc3524/b143f50a56-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260706-dsc3524/b143f50a56-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3537",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3537.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "7c3661cebb",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.004,
+   "fNumber": 7.1,
+   "iso": 800,
+   "focal": 23,
+   "date": "2026-07-06T22:55:46",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQABAAA4BaJZACdAEOvEEHGAAA/iISXYzMKzSyGM2z8jnbt9LXvcsa+wQAAA==",
+   "color": "#8ea4bf",
+   "id": "20260706-dsc3537",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260706-dsc3537/7c3661cebb-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260706-dsc3537/7c3661cebb-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260706-dsc3537/7c3661cebb-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3557",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3557.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "1e4bf5c9d5",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 20,
+   "fNumber": 3.5,
+   "iso": 3200,
+   "focal": 18,
+   "date": "2026-07-09T02:02:13",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoQABAAA4BaJaQAA3AA/vWDAAA=",
+   "color": "#030404",
+   "id": "20260709-dsc3557",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260709-dsc3557/1e4bf5c9d5-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260709-dsc3557/1e4bf5c9d5-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260709-dsc3557/1e4bf5c9d5-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3563",
+   "source": "2026-07 San Diego & Big Bear Lake/DSC_3563.jpg",
+   "albumFolder": "2026-07 San Diego & Big Bear Lake",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "14877dfe23",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 5,
+   "iso": 1000,
+   "focal": 18,
+   "date": "2026-07-09T14:54:56",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQABAAA4BaJbACdAEPCCyeueAA/nbIBf01NFpgJ6yWn0+OtKdDByjk4ekn58fxQ81sxOswtnPX3ir3rAAAAA==",
+   "color": "#59777e",
+   "id": "20260709-dsc3563",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260709-dsc3563/14877dfe23-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260709-dsc3563/14877dfe23-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260709-dsc3563/14877dfe23-1600.webp"
+    }
+   ],
+   "album": "san-diego-big-bear-lake"
+  },
+  {
+   "stem": "DSC_3580",
+   "source": "2026-09 Salt Lake City/DSC_3580.jpg",
+   "albumFolder": "2026-09 Salt Lake City",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "b05b616dbe",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 4.5,
+   "iso": 100,
+   "focal": 20,
+   "date": "2026-09-07T21:23:32",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQABAAA4BaJZgCdAEOw8zg6AAA/vRTeTfIBNDruXT2D7fKNUnoc9lcHatkDzgOB19BwLFCIZPCv0AA",
+   "color": "#3f331d",
+   "id": "20260907-dsc3580",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260907-dsc3580/b05b616dbe-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260907-dsc3580/b05b616dbe-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260907-dsc3580/b05b616dbe-1600.webp"
+    }
+   ],
+   "album": "salt-lake-city"
+  },
+  {
+   "stem": "DSC_3590",
+   "source": "2026-09 Salt Lake City/DSC_3590.jpg",
+   "albumFolder": "2026-09 Salt Lake City",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "ab45fb50c2",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 5,
+   "iso": 220,
+   "focal": 60,
+   "date": "2026-09-07T21:43:00",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAgCdASoQABAAA4BaJbACdH8AGBwb360M8AD+9CpnHjs/md4XMCKFTmHF90yfNf9cSnBBusOMx32W+hRzUgQA",
+   "color": "#462c15",
+   "id": "20260907-dsc3590",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260907-dsc3590/ab45fb50c2-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260907-dsc3590/ab45fb50c2-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260907-dsc3590/ab45fb50c2-1600.webp"
+    }
+   ],
+   "album": "salt-lake-city"
+  },
+  {
+   "stem": "DSC_3596",
+   "source": "2026-09 Salt Lake City/DSC_3596.jpg",
+   "albumFolder": "2026-09 Salt Lake City",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "c897cf07ef",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.003125,
+   "fNumber": 5,
+   "iso": 3200,
+   "focal": 62,
+   "date": "2026-09-07T21:51:14",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACQAQCdASoQABAAA4BaJbACdABSDFQAyv2VuWucIe1zsjcqXweW2z1/q5220MfnCTqHhR+aAAA=",
+   "color": "#b37d72",
+   "id": "20260907-dsc3596",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260907-dsc3596/c897cf07ef-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260907-dsc3596/c897cf07ef-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260907-dsc3596/c897cf07ef-1600.webp"
+    }
+   ],
+   "album": "salt-lake-city"
+  },
+  {
+   "stem": "DSC_3600",
+   "source": "2026-09 Salt Lake City/DSC_3600.jpg",
+   "albumFolder": "2026-09 Salt Lake City",
+   "astro": false,
+   "width": 3408,
+   "height": 3408,
+   "hash": "3e9d1ef7e7",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.016666666666666666,
+   "fNumber": 4.2,
+   "iso": 6400,
+   "focal": 34,
+   "date": "2026-09-07T22:23:54",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoQABAAA4BaJZwAAudZtBJIAP75Ct6WRGEiJE07aC1rsgAA",
+   "color": "#0a1012",
+   "id": "20260907-dsc3600",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20260907-dsc3600/3e9d1ef7e7-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20260907-dsc3600/3e9d1ef7e7-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20260907-dsc3600/3e9d1ef7e7-1600.webp"
+    }
+   ],
+   "album": "salt-lake-city"
+  },
+  {
+   "stem": "DSC_3639",
+   "source": "2026-10 Little Cottonwood/DSC_3639.jpg",
+   "albumFolder": "2026-10 Little Cottonwood",
+   "astro": false,
+   "width": 3993,
+   "height": 3993,
+   "hash": "8f2e8b9b52",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0015625,
+   "fNumber": 16,
+   "iso": 6400,
+   "focal": 18,
+   "date": "2026-10-04T17:41:07",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABwAgCdASoQABAAA4BaJbACdIDZFm+bY3byofAAAP7xe46DcuA/cs+TZNp7F5ghiC3OaNpp0wFK1EUJBqk1WO6zagV/MApN/UPWAOAY/ufsD9FRNX48zIXAotMFn3LG4y9UBMAA",
+   "color": "#3d3d36",
+   "id": "20261004-dsc3639",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261004-dsc3639/8f2e8b9b52-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261004-dsc3639/8f2e8b9b52-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261004-dsc3639/8f2e8b9b52-1600.webp"
+    }
+   ],
+   "album": "little-cottonwood"
+  },
+  {
+   "stem": "DSC_3648",
+   "source": "2026-10 Little Cottonwood/DSC_3648.jpg",
+   "albumFolder": "2026-10 Little Cottonwood",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "18b9d217f7",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0025,
+   "fNumber": 5.6,
+   "iso": 6400,
+   "focal": 140,
+   "date": "2026-10-04T18:11:17",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQABAAA4BaJZwAAudBAHEPxVAAAP7ZMMQT+jfszg4Cwmp8IuQtF+0NB4M39F0EzSJC2giI/wXlALs9wAAAAA==",
+   "color": "#54514f",
+   "id": "20261004-dsc3648",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261004-dsc3648/18b9d217f7-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261004-dsc3648/18b9d217f7-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261004-dsc3648/18b9d217f7-1600.webp"
+    }
+   ],
+   "album": "little-cottonwood"
+  },
+  {
+   "stem": "DSC_3650",
+   "source": "2026-10 Little Cottonwood/DSC_3650.jpg",
+   "albumFolder": "2026-10 Little Cottonwood",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "682b65e4a4",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0025,
+   "fNumber": 5.6,
+   "iso": 6400,
+   "focal": 140,
+   "date": "2026-10-04T18:11:27",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQABAAA4BaJZQCw7CIqsTgAP7jRSdHZdtBPy/vlUVKU/YDUyOSG8Bu3VCQDKcve6H6ZAZYNxIbjb/BEN/tuFEAAAA=",
+   "color": "#56534d",
+   "id": "20261004-dsc3650",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261004-dsc3650/682b65e4a4-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261004-dsc3650/682b65e4a4-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261004-dsc3650/682b65e4a4-1600.webp"
+    }
+   ],
+   "album": "little-cottonwood"
+  },
+  {
+   "stem": "DSC_3651",
+   "source": "2026-10 Little Cottonwood/DSC_3651.jpg",
+   "albumFolder": "2026-10 Little Cottonwood",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "b0ee56cd73",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 3.5,
+   "iso": 1400,
+   "focal": 18,
+   "date": "2026-10-04T18:12:24",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQABAAA4BaJQBOgB6HiiG86dAA/vLg66mlOEs5dVUoUXdDsb14mixgycepOtZwex+WfLBsiJE8HRjiruxhLSJySj39wHIl4NgAAA==",
+   "color": "#42403b",
+   "id": "20261004-dsc3651",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261004-dsc3651/b0ee56cd73-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261004-dsc3651/b0ee56cd73-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261004-dsc3651/b0ee56cd73-1600.webp"
+    }
+   ],
+   "album": "little-cottonwood"
+  },
+  {
+   "stem": "DSC_3669",
+   "source": "2026-10 Little Cottonwood/DSC_3669.jpg",
+   "albumFolder": "2026-10 Little Cottonwood",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "974ea5b50a",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00125,
+   "fNumber": 20,
+   "iso": 6400,
+   "focal": 18,
+   "date": "2026-10-04T18:54:27",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwAgCdASoQABAAA4BaJbACdEyAVBeDIDUrXvsAAPXLqK2H9iMRY6w4snInUZvTeKPuu4H6E642COmx0C12JIz2+5/25pU/Ef3i+a1ff6M0wzZHGTN3I/yUWC711/LapMkAAA==",
+   "color": "#976c52",
+   "id": "20261004-dsc3669",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261004-dsc3669/974ea5b50a-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261004-dsc3669/974ea5b50a-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261004-dsc3669/974ea5b50a-1600.webp"
+    }
+   ],
+   "album": "little-cottonwood"
+  },
+  {
+   "stem": "DSC_3675",
+   "source": "2026-10 Little Cottonwood/DSC_3675.jpg",
+   "albumFolder": "2026-10 Little Cottonwood",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "ce00b44a8b",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0008,
+   "fNumber": 20,
+   "iso": 6400,
+   "focal": 18,
+   "date": "2026-10-04T19:03:06",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQABAAA4BaJbACdAEPBY/Jx5sEKCAA/tpbxVsSDLlureibqPa+je5OYB6Mg/imF3vif3fLctdYAEnIMVv2o97DOMOraf9avIqYrtTfXfKTD7/mZY7NFdrbe4jijxwAAAA=",
+   "color": "#4c5d65",
+   "id": "20261004-dsc3675",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261004-dsc3675/ce00b44a8b-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261004-dsc3675/ce00b44a8b-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261004-dsc3675/ce00b44a8b-1600.webp"
+    }
+   ],
+   "album": "little-cottonwood"
+  },
+  {
+   "stem": "DSC_3711",
+   "source": "2026-10 Angel's Camp/DSC_3711.jpg",
+   "albumFolder": "2026-10 Angel's Camp",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "dfb1ecb9b8",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0008,
+   "fNumber": 13,
+   "iso": 6400,
+   "focal": 18,
+   "date": "2026-10-10T17:27:51",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAA4BaJbAC7AYuvq2ieTr7O6gA/tGy0iANl1c8gE+eb3smOBzhwnr0q+Zj2DdzrsisCxUVbqdnK0i2Yw4I3T/pkiKl9VDNS9VmLVuWfFY8jOVfSqNtcz7C70FnYwhRKAAA",
+   "color": "#64663d",
+   "id": "20261010-dsc3711",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261010-dsc3711/dfb1ecb9b8-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261010-dsc3711/dfb1ecb9b8-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261010-dsc3711/dfb1ecb9b8-1600.webp"
+    }
+   ],
+   "album": "angels-camp"
+  },
+  {
+   "stem": "DSC_3744",
+   "source": "2026-10 Angel's Camp/DSC_3744.jpg",
+   "albumFolder": "2026-10 Angel's Camp",
+   "astro": false,
+   "width": 4000,
+   "height": 4000,
+   "hash": "1eee8c9423",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0025,
+   "fNumber": 29,
+   "iso": 6400,
+   "focal": 45,
+   "date": "2026-10-10T21:10:16",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABwAgCdASoQABAAA4BaJbACdAYuvyn81pwxa7gAAP5zB5pTxXsJ//psPGJwEB0T+L8jFTMCnLVpt/8hLwD291xPM4xh67AGnd5RXht8jzYV++7G8wRTEAAA",
+   "color": "#3a2c17",
+   "id": "20261010-dsc3744",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261010-dsc3744/1eee8c9423-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261010-dsc3744/1eee8c9423-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261010-dsc3744/1eee8c9423-1600.webp"
+    }
+   ],
+   "album": "angels-camp"
+  },
+  {
+   "stem": "DSC_3770",
+   "source": "2026-10 Angel's Camp/DSC_3770.jpg",
+   "albumFolder": "2026-10 Angel's Camp",
+   "astro": false,
+   "width": 3920,
+   "height": 3920,
+   "hash": "47ccdb92c0",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.00025,
+   "fNumber": 6.3,
+   "iso": 4500,
+   "focal": 27,
+   "date": "2026-10-11T16:57:39",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQABAAA4BaJbACdADp4MsuhnYAAM46OHFvAU8x3w8F3+S9fK7NddxcZ7i0Qg68gT5+GEvuRi3L6YQgziyNihE0JyWV/jBPD33rmtYgR2+LYwUU4xpAAA==",
+   "color": "#545034",
+   "id": "20261011-dsc3770",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261011-dsc3770/47ccdb92c0-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261011-dsc3770/47ccdb92c0-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261011-dsc3770/47ccdb92c0-1600.webp"
+    }
+   ],
+   "album": "angels-camp"
+  },
+  {
+   "stem": "DSC_3785",
+   "source": "2026-10 Angel's Camp/DSC_3785.jpg",
+   "albumFolder": "2026-10 Angel's Camp",
+   "astro": false,
+   "width": 3415,
+   "height": 3415,
+   "hash": "da7cc50f28",
+   "camera": "Nikon D3500",
+   "lens": "18.0-140.0 mm f/3.5-5.6",
+   "exposure": 0.0004,
+   "fNumber": 5.6,
+   "iso": 6400,
+   "focal": 140,
+   "date": "2026-10-11T17:31:11",
+   "dateSource": "exif",
+   "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQABAAA4BaJZQAD5Gw9OodfG5mAAAA/qFtSM5/vtw2Tye5dtndkS1WmbpnUjLGxOlKYbyURX8bc4w3C963R138+ocRzSyxnf6qsaVLHmTCiE3wAAA=",
+   "color": "#505049",
+   "id": "20261011-dsc3785",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 400,
+     "src": "photos/20261011-dsc3785/da7cc50f28-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 900,
+     "src": "photos/20261011-dsc3785/da7cc50f28-900.webp"
+    },
+    {
+     "w": 1600,
+     "h": 1600,
+     "src": "photos/20261011-dsc3785/da7cc50f28-1600.webp"
+    }
+   ],
+   "album": "angels-camp"
+  },
+  {
+   "stem": "IC1805",
+   "source": "Astrophotography/IC1805.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1078,
+   "height": 1916,
+   "hash": "fb61e390bc",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 2680,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "IC 1805",
+   "integrationSec": 2680,
+   "date": "2026-10-13T15:32:17",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQBACdASoQAB0APu1iqU2ppaOiMAgBMB2JZACsAGlfxAn7cEav2zw0JDfAAP792WtRF+ZsjQI/xAJA1whcIoZZZHwe7mLmd2HbRGwUFZS95LxmXeAwZJ+3UM5Uu0iIJlFxyq//sDCs7LFKNQj97VOXVaCo89SAAAA=",
+   "color": "#1c1a19",
+   "id": "ic1805",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/ic1805/fb61e390bc-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/ic1805/fb61e390bc-900.webp"
+    },
+    {
+     "w": 1078,
+     "h": 1916,
+     "src": "photos/ic1805/fb61e390bc-1078.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "M33",
+   "source": "Astrophotography/M33.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1078,
+   "height": 1916,
+   "hash": "30b626a1a6",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 3140,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "M33",
+   "integrationSec": 3140,
+   "date": "2026-10-13T15:32:17",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAABwAwCdASoQAB0ALrV2u12jqampiYC0S0gABc6p3weeS2rThAAA/vd3NYQJS1nmj4G1uNiKuVlfDZAAAAA=",
+   "color": "#181718",
+   "id": "m33",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/m33/30b626a1a6-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/m33/30b626a1a6-900.webp"
+    },
+    {
+     "w": 1078,
+     "h": 1916,
+     "src": "photos/m33/30b626a1a6-1078.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "M45",
+   "source": "Astrophotography/M45.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1078,
+   "height": 1916,
+   "hash": "31efad3624",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 2700,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "M45",
+   "integrationSec": 2700,
+   "date": "2026-10-13T15:32:17",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQAwCdASoQAB0ALrV2u12jqampiYC0SxAABc6Qg5b3Pbu3sOWAAP74T+jIHX/jTAzUOqU2qAbvCUuFHZiYc8ryj9vNv3GW5AkVIM5vG8jNSilk1vXPhoAA",
+   "color": "#171920",
+   "id": "m45",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/m45/31efad3624-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/m45/31efad3624-900.webp"
+    },
+    {
+     "w": 1078,
+     "h": 1916,
+     "src": "photos/m45/31efad3624-1078.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "NGC6960",
+   "source": "Astrophotography/NGC6960.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1078,
+   "height": 1916,
+   "hash": "f8a04ccbda",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 2760,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "NGC 6960",
+   "integrationSec": 2760,
+   "date": "2026-10-13T15:32:17",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAwCdASoQAB0APu1iqU2ppaQiMAgBMB2JZwDMHB6SYRQiNe7gUW4AAP7phyc646jqUQg3JswVIlBgk+iAl0Y4oDS2JwAA",
+   "color": "#0f0f11",
+   "id": "ngc6960",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/ngc6960/f8a04ccbda-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/ngc6960/f8a04ccbda-900.webp"
+    },
+    {
+     "w": 1078,
+     "h": 1916,
+     "src": "photos/ngc6960/f8a04ccbda-1078.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "NGC1499",
+   "source": "Astrophotography/NGC1499.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1078,
+   "height": 1916,
+   "hash": "c41a027b88",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 9510,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "NGC 1499",
+   "integrationSec": 9510,
+   "date": "2026-10-13T15:32:18",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoQAB0APu1kqU2ppaQiMAgBMB2JbAABHun0sawQP3q5tJwA/v4TUzZxTY18tx0yonBNB2erjlqZekINP+ETwUgrvbOCA/yh+pU/852UPsXg9nUIPheVePfDtUNFnxctwYXMNqaAAAA=",
+   "color": "#271413",
+   "id": "ngc1499",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/ngc1499/c41a027b88-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/ngc1499/c41a027b88-900.webp"
+    },
+    {
+     "w": 1078,
+     "h": 1916,
+     "src": "photos/ngc1499/c41a027b88-1078.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "NGC281",
+   "source": "Astrophotography/NGC281.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1078,
+   "height": 1916,
+   "hash": "f8c567891f",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 1920,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "NGC 281",
+   "integrationSec": 1920,
+   "date": "2026-10-13T15:32:18",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoQAB0APu1iqk2ppaQiMAgBMB2JQAAj3VW3ZHdBFEmkAP7+FFc/nheBOn3fJ7P/9d95pcrbVqvT1BufBKAO8ad+pEQ1wAAA",
+   "color": "#100d0d",
+   "id": "ngc281",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/ngc281/f8c567891f-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/ngc281/f8c567891f-900.webp"
+    },
+    {
+     "w": 1078,
+     "h": 1916,
+     "src": "photos/ngc281/f8c567891f-1078.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "NGC7293",
+   "source": "Astrophotography/NGC7293.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1078,
+   "height": 1916,
+   "hash": "135a3bd920",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 1320,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "NGC 7293",
+   "integrationSec": 1320,
+   "date": "2026-10-13T15:32:18",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAwAwCdASoQAB0APu1kqU2ppaQiMAgBMB2JZwAAW+s3gvcAAP70GJOTlj23Ogd3jtEAAA==",
+   "color": "#060505",
+   "id": "ngc7293",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/ngc7293/135a3bd920-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/ngc7293/135a3bd920-900.webp"
+    },
+    {
+     "w": 1078,
+     "h": 1916,
+     "src": "photos/ngc7293/135a3bd920-1078.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "NGC7000",
+   "source": "Astrophotography/NGC7000.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1078,
+   "height": 1916,
+   "hash": "80217b2533",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 4800,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "NGC 7000",
+   "integrationSec": 4800,
+   "date": "2026-10-13T15:34:13",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoQAB0APu1iqU2ppaOiMAgBMB2JYwDE+DZEgIdl+6iqQDyrAAD+8CZZbFWGEerjuZnY5PxAP7l9LP8A8/J3XYQr9iwY2KHp2glPhkEL+ilNe+Pg0XEXU+27yzwPP5Tl0/9VUsBfytXKHBTD2efEdVTp8/dhWAAA",
+   "color": "#1c171a",
+   "id": "ngc7000",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/ngc7000/80217b2533-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/ngc7000/80217b2533-900.webp"
+    },
+    {
+     "w": 1078,
+     "h": 1916,
+     "src": "photos/ngc7000/80217b2533-1078.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "IC405",
+   "source": "Astrophotography/IC405.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1079,
+   "height": 1918,
+   "hash": "23979b860d",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 6030,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "IC 405",
+   "integrationSec": 6030,
+   "date": "2026-10-15T22:59:57",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASoQAB0APu1kqk2ppaQiMAgBMB2JQAAj3WQg6xP7fXl+AAD+/dl/KX2RrzWu8c09gacn2kfnq0dQLjjfuiXtrdoZZicsIOQAAAA=",
+   "color": "#1a1415",
+   "id": "ic405",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/ic405/23979b860d-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/ic405/23979b860d-900.webp"
+    },
+    {
+     "w": 1079,
+     "h": 1918,
+     "src": "photos/ic405/23979b860d-1079.webp"
+    }
+   ],
+   "album": null
+  },
+  {
+   "stem": "M31",
+   "source": "Astrophotography/M31.jpg",
+   "albumFolder": null,
+   "astro": true,
+   "width": 1079,
+   "height": 1918,
+   "hash": "82678ec67e",
+   "camera": "ZWO Seestar S50 Pro",
+   "lens": null,
+   "exposure": 14590,
+   "fNumber": 5,
+   "iso": 200,
+   "focal": 260,
+   "target": "M31",
+   "integrationSec": 14590,
+   "date": "2026-10-23T01:18:33",
+   "dateSource": "export",
+   "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoQAB0APu1krU6ppaSiMAgBMB2JZwAAW8O6Gq4tIxSYjgAA/vKtETNcEPps/Fkzd1zRO/ZBa9CfeeSLf4Uk0fRHH8Ki1i0Kae6oigAA",
+   "color": "#191715",
+   "id": "m31",
+   "outputs": [
+    {
+     "w": 400,
+     "h": 711,
+     "src": "photos/m31/82678ec67e-400.webp"
+    },
+    {
+     "w": 900,
+     "h": 1600,
+     "src": "photos/m31/82678ec67e-900.webp"
+    },
+    {
+     "w": 1079,
+     "h": 1918,
+     "src": "photos/m31/82678ec67e-1079.webp"
+    }
+   ],
+   "album": null
+  }
+ ]
+}
