@@ -137,7 +137,7 @@ Two views of the same photo, and the browser decides which one opens.
 ## 7. Motion
 
 Almost none.
-- Images fade from their placeholder in 150ms (`opacity`).
+- Images replace their blur placeholder as they decode; there is no extra fade, since it would need JS on every image.
 - Overlay opens with a 120ms fade; no scale, no slide.
 - Hover states change instantly or in 100ms.
 - No parallax, no scroll-triggered animation, no bounce.
@@ -212,9 +212,9 @@ All visual values are tokens (section 2 plus spacing and font tokens). A future 
 ## 13. Images
 
 - Per photo: inline blur placeholder (tiny WebP, ~16px wide), 400w, 900w, 1600w WebP.
-- Quality 80 for normal photos, 88 for Deep Sky (avoids banding in dark gradients). sRGB, EXIF-oriented, metadata stripped after reading.
-- To keep long pages light, inline blur placeholders are used for the first ~12 images per page; later images use a single dominant-color background (a few bytes each).
-- First image on each page: `fetchpriority="high"`, not lazy. Everything below the fold: `loading="lazy" decoding="async"`.
+- Quality by width: 70 / 76 / 80 for 400 / 900 / 1600w, and 80 / 85 / 88 for Deep Sky (avoids banding in dark gradients). Thumbnails are seen small, so they carry less. sRGB, EXIF-oriented, metadata stripped after reading.
+- Every grid image has its inline blur placeholder (~170 bytes). A plain color would cost about the same, because with `object-fit: contain` the background has to match the photo's shape anyway. Revisit (paginate `/photos/all/` by year) past a few hundred photos.
+- First two images on each grid page load eagerly, the first with `fetchpriority="high"`. Everything else: `loading="lazy" decoding="async"` with `sizes="auto, …"` so the browser picks a width from the real layout in every S/M/L mode.
 
 ## 14. Performance budget
 
@@ -277,4 +277,4 @@ Utah (Park City, Salt Lake City, Little Cottonwood) · Bay Area (San Francisco, 
 - **Site and Bortle:** entered once per observing site.
 
 ### Photo IDs and URLs
-`<yyyymmdd>-<file stem>`, lowercased: `/p/20260705-dsc3447/`, `/p/20261019-m31/`. Stable when photos are added or re-exported.
+Regular photos: `<yyyymmdd>-<file stem>`, lowercased (`/p/20260705-dsc3447/`). Deep Sky: the catalog id (`/p/m31/`, `/p/ngc7000/`), with the date appended only if the same target is shot again. Stable when photos are added or re-exported.

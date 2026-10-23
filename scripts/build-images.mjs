@@ -23,7 +23,13 @@ const CONTENT = join(ROOT, 'content/photos.json');
 const CACHE = join(ROOT, '.cache/images.json');
 
 // Bump when output settings change, so every photo is regenerated.
-const SETTINGS = { v: 2, widths: [400, 900, 1600], quality: 80, astroQuality: 88, effort: 5 };
+// Quality per width: thumbnails are seen small, so they can be lighter; astro gets more
+// headroom everywhere to avoid banding in dark gradients.
+const SETTINGS = {
+  v: 3, widths: [400, 900, 1600], effort: 6,
+  quality: { 400: 70, 900: 76, 1600: 80 },
+  astroQuality: { 400: 80, 900: 85, 1600: 88 },
+};
 const SETTINGS_KEY = JSON.stringify(SETTINGS);
 const IMAGE_EXT = new Set(['.jpg', '.jpeg', '.png', '.tif', '.tiff', '.webp']);
 const ASTRO_DIR = /^astro(photography)?$/i;
@@ -126,7 +132,6 @@ async function processPhoto(file, cached) {
   }
 
   const base = sharp(buf).rotate().toColorspace('srgb');
-  const quality = file.astro ? SETTINGS.astroQuality : SETTINGS.quality;
   const outputs = [];
   const seen = new Set();
   for (const w of SETTINGS.widths) {
@@ -134,7 +139,7 @@ async function processPhoto(file, cached) {
     if (seen.has(target)) continue;
     seen.add(target);
     const h = Math.round((height * target) / width);
-    outputs.push({ w: target, h, quality });
+    outputs.push({ w: target, h, quality: (file.astro ? SETTINGS.astroQuality : SETTINGS.quality)[w] });
   }
 
   // Average color, used as the background of photos further down the page.
