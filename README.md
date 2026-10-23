@@ -57,5 +57,5 @@ Aidan Kelley's personal site and photography gallery. Plain HTML/CSS and a littl
 
 The site is a Cloudflare Worker that only serves static files. `wrangler.jsonc` points it at `site/`, so pushing to `main` redeploys. No build runs on Cloudflare.
 
-- Live at https://personal-site.kraftiumyt.workers.dev (change `url` in `content/site.json` if the address changes, then rebuild)
+- Live at https://www.luksem.workers.dev (change `url` in `content/site.json` if the address changes, then rebuild)
 - Caching comes from `site/_headers`
