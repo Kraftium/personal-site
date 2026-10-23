@@ -1,7 +1,7 @@
-node_modules/
-/originals
-.cache/
-.lighthouse/
 *.log
 .DS_Store
+.cache/
+.lighthouse/
+/originals
 Thumbs.db
+node_modules/

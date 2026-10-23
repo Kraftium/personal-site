@@ -1,6 +1,8 @@
-// Tiny static server for previewing site/ locally. Mirrors Cloudflare Pages:
-// /path/ serves /path/index.html, and _headers is not applied.
+// Tiny static server for previewing site/ locally. Mirrors Cloudflare Pages closely
+// enough for Lighthouse: /path/ serves /path/index.html, text is gzipped, and
+// generated assets get the same long cache as in _headers.
 import { createServer } from 'node:http';
+import { gzipSync } from 'node:zlib';
 import { readFile, stat } from 'node:fs/promises';
 import { join, extname, normalize } from 'node:path';
 
@@ -18,8 +20,15 @@ createServer(async (req, res) => {
   let file = join(root, path);
   try {
     if ((await stat(file)).isDirectory()) file = join(file, 'index.html');
-    const body = await readFile(file);
-    res.writeHead(200, { 'Content-Type': types[extname(file)] || 'application/octet-stream' });
+    let body = await readFile(file);
+    const type = types[extname(file)] || 'application/octet-stream';
+    const headers = { 'Content-Type': type };
+    headers['Cache-Control'] = /^\/(photos|assets)\//.test(path) ? 'public, max-age=31536000, immutable' : 'public, max-age=0, must-revalidate';
+    if (/text|javascript|json|svg|xml/.test(type) && /gzip/.test(req.headers['accept-encoding'] || '')) {
+      body = gzipSync(body);
+      headers['Content-Encoding'] = 'gzip';
+    }
+    res.writeHead(200, headers);
     res.end(body);
   } catch {
     const body = await readFile(join(root, '404.html')).catch(() => 'Not found');
