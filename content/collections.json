@@ -1,0 +1,11 @@
+{
+  "_help": "Order here is the order on the site. Photos join a collection by listing its slug in content/photos.json.",
+  "deep-sky": { "title": "Deep Sky", "description": "Galaxies, nebulae, and star clusters from a Seestar S50." },
+  "landscapes": { "title": "Landscapes", "description": "Trails, hills, canyons, and coastlines." },
+  "wildlife": { "title": "Wildlife", "description": "Whoever wandered into frame." },
+  "architecture": { "title": "Architecture", "description": "Towers, bridges, facades, and glass." },
+  "golden-blue-hour": { "title": "Golden & Blue Hour", "description": "The first and last light of the day." },
+  "night": { "title": "Night", "description": "After dark, before the telescope comes out." },
+  "small-things": { "title": "Small Things", "description": "Close-ups of flowers, sprouts, and tide pools." },
+  "fall": { "title": "Fall", "description": "Aspens and maples at their peak." }
+}

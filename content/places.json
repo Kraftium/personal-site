@@ -1,0 +1,24 @@
+{
+  "_help": "Places are named once; photos point to them by key. lat/lon are typed in by hand (no GPS in the photos). region keys are defined in regions below.",
+  "regions": {
+    "utah": { "title": "Utah", "state": "UT" },
+    "bay-area": { "title": "Bay Area", "state": "CA" },
+    "socal": { "title": "SoCal", "state": "CA" },
+    "gold-country": { "title": "Gold Country", "state": "CA" }
+  },
+  "places": {
+    "park-city": { "title": "Park City", "city": "Park City", "region": "utah", "lat": 40.6461, "lon": -111.4980 },
+    "salt-lake-city": { "title": "Salt Lake City", "city": "Salt Lake City", "region": "utah", "lat": 40.7608, "lon": -111.8910 },
+    "little-cottonwood": { "title": "Little Cottonwood Canyon", "city": "Sandy", "region": "utah", "lat": 40.5730, "lon": -111.7270 },
+    "san-pablo-reservoir": { "title": "San Pablo Reservoir", "city": "El Sobrante", "region": "bay-area", "lat": 37.9230, "lon": -122.2580 },
+    "ferry-building": { "title": "Ferry Building", "city": "San Francisco", "region": "bay-area", "lat": 37.7955, "lon": -122.3937 },
+    "pier-39": { "title": "Pier 39", "city": "San Francisco", "region": "bay-area", "lat": 37.8087, "lon": -122.4098 },
+    "golden-gate": { "title": "Golden Gate Bridge", "city": "San Francisco", "region": "bay-area", "lat": 37.8199, "lon": -122.4783 },
+    "balboa-park": { "title": "Balboa Park", "city": "San Diego", "region": "socal", "lat": 32.7341, "lon": -117.1446 },
+    "uss-midway": { "title": "USS Midway", "city": "San Diego", "region": "socal", "lat": 32.7137, "lon": -117.1751 },
+    "san-diego-coast": { "title": "San Diego coast", "city": "San Diego", "region": "socal", "lat": 32.8400, "lon": -117.2800 },
+    "big-bear-lake": { "title": "Big Bear Lake", "city": "Big Bear Lake", "region": "socal", "lat": 34.2439, "lon": -116.9114 },
+    "angels-camp": { "title": "Angels Camp", "city": "Angels Camp", "region": "gold-country", "lat": 38.0683, "lon": -120.5397 },
+    "calaveras-big-trees": { "title": "Calaveras Big Trees", "city": "Arnold", "region": "gold-country", "lat": 38.2772, "lon": -120.3071 }
+  }
+}
