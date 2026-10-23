@@ -2,5 +2,26 @@
   "name": "Aidan Kelley",
   "tagline": "Full-stack developer, photographer, and weightlifter.",
   "url": "https://www.luksem.workers.dev",
-  "links": []
+  "links": [
+    {
+      "label": "Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/ai.dank/"
+    },
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/Kraftium"
+    },
+    {
+      "label": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/ai-dank/"
+    },
+    {
+      "label": "Spotify",
+      "icon": "spotify",
+      "url": "https://open.spotify.com/user/kraftium"
+    }
+  ]
 }
