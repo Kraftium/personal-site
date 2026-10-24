@@ -282,11 +282,16 @@ const dotSvg = dots.map((d) => {
   return `<a href="${href}" aria-label="${esc(label)}"><circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(4 + Math.sqrt(n) * 1.6).toFixed(1)}"><title>${esc(label)}</title></circle></a>`;
 }).join('');
 
+// Map link-preview card, 1200×630.
+const mapSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#0f0f10"/><svg x="40" y="20" width="1120" height="590" viewBox="0 0 ${map.width} ${map.height}"><style>.land{fill:#232327}.borders{fill:none;stroke:#3a3a40;stroke-width:1.2}.nation{stroke:#55555c}.inset{fill:#0f0f10;stroke:#3a3a40}circle{fill:#f2b24c;stroke:#0f0f10;stroke-width:2}</style>${map.svg}${dots.map((d) => `<circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(5 + Math.sqrt(d.places.reduce((t, pl) => t + pl.photos.length, 0)) * 2).toFixed(1)}"/>`).join('')}</svg></svg>`;
+const mapPng = await sharp(Buffer.from(mapSvg)).png({ palette: true }).toBuffer();
+// Hashed name so link previews (Discord caches images by URL) pick up a new map.
+const mapCard = `/og/places-${createHash('sha256').update(mapPng).digest('hex').slice(0, 10)}.png`;
 const STATES = { AB: 'Alberta', BC: 'British Columbia', TN: 'Tennessee', UT: 'Utah', CA: 'California', NV: 'Nevada', AZ: 'Arizona', OR: 'Oregon', WA: 'Washington', CO: 'Colorado', ID: 'Idaho', WY: 'Wyoming', MT: 'Montana', NM: 'New Mexico', TX: 'Texas', NY: 'New York', MA: 'Massachusetts', HI: 'Hawaii', AK: 'Alaska' };
 const stateNames = [...new Set(placeList.map((pl) => pl.region?.state).filter(Boolean))].map((c) => STATES[c] || c);
 const listWords = (a) => (a.length < 3 ? a.join(' and ') : `${a.slice(0, -1).join(', ')}, and ${a.at(-1)}`);
 emit('/places/', page({
-  path: '/places/', title: 'Places', current: 'places', image: '/og/places.png',
+  path: '/places/', title: 'Places', current: 'places', image: mapCard,
   description: `Where ${site.name}'s photographs were taken.`,
   ogDescription: `${plural(placeList.length, 'place')}${stateNames.length ? ` across ${listWords(stateNames)}` : ''}.`,
   body: `<div class="head"><span class="lbl">Photography</span><h1>Places</h1><p class="muted">${plural(placeList.length, 'place')} in ${plural(byRegion.size, 'region')}.</p></div><figure class="map"><svg viewBox="0 0 ${map.width} ${map.height}" role="group" aria-label="Map of North America with a dot for each place">${map.svg}<g class="dots">${dotSvg}</g></svg></figure><div class="index" id="place-list">${[...byRegion].map(([r, list]) => indexCol(regionId(r), `${esc(r)}${list[0].region ? `, ${list[0].region.state}` : ''}`, list.map((pl) => `<li><a href="${pl.url}" data-place="${pl.slug}"><span>${esc(pl.title)}${pl.city && pl.city !== pl.title ? `<small>${esc(pl.city)}</small>` : ''}</span><span class="n">${pl.photos.length}</span></a></li>`))).join('')}</div>`,
@@ -349,9 +354,9 @@ for (const [path, p] of cards) {
     .composite([{ input: fitted, gravity: 'center' }]).jpeg({ quality: 84, mozjpeg: true }).toFile(file);
 }
 for (const f of await readdir(join(SITE, 'og/p'))) if (!cards.has(`og/p/${f}`)) await rm(join(SITE, 'og/p', f));
+for (const f of await readdir(join(SITE, 'og'))) if (/^places.*\.png$/.test(f) && `/og/${f}` !== mapCard) await rm(join(SITE, 'og', f));
+await writeFile(join(SITE, mapCard.slice(1)), mapPng);
 await writeFile(join(SITE, 'og/favorites.json'), JSON.stringify(favorites.map(cardFor)) + '\n');
-const mapSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="${BG}"/><svg x="40" y="20" width="1120" height="590" viewBox="0 0 ${map.width} ${map.height}"><style>.land{fill:#232327}.borders{fill:none;stroke:#3a3a40;stroke-width:1.2}.nation{stroke:#55555c}.inset{fill:${BG};stroke:#3a3a40}circle{fill:#f2b24c;stroke:${BG};stroke-width:2}</style>${map.svg}${dots.map((d) => `<circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(5 + Math.sqrt(d.places.reduce((t, pl) => t + pl.photos.length, 0)) * 2).toFixed(1)}"/>`).join('')}</svg></svg>`;
-await sharp(Buffer.from(mapSvg)).png({ palette: true }).toFile(join(SITE, 'og/places.png'));
 await writeFile(join(SITE, 'assets', jsName), js);
 await writeFile(join(SITE, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#0f0f10"/><circle cx="16" cy="16" r="7" fill="none" stroke="#e8e6e3" stroke-width="2.5"/><circle cx="23.5" cy="8.5" r="1.6" fill="#f2b24c"/></svg>`);
 await writeFile(join(SITE, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${site.url.replace(/\/$/, '')}/sitemap.xml\n`);
