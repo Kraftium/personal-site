@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir, rm, readdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { transform } from 'esbuild';
-import { geoAlbersUsa } from 'd3-geo';
+import { northAmericaMap } from './map.mjs';
 import sharp from 'sharp';
 import { existsSync } from 'node:fs';
 import * as brands from 'simple-icons';
@@ -74,7 +74,7 @@ const collectionBySlug = Object.fromEntries(collections.map((c) => [c.slug, c]))
 
 const photos = manifest.photos.map((m) => {
   const c = content[m.id] || {};
-  const album = m.album ? albumBySlug[m.album] : null;
+  const album = m.album && c.album !== false ? albumBySlug[m.album] : null;
   const date = m.dateSource === 'export' ? null : shiftHours(m.date, album?.offset);
   const place = c.place ? places[c.place] : null;
   if (c.place && !place) warnings.push(`${m.id}: unknown place "${c.place}"`);
@@ -254,21 +254,21 @@ for (const [y, list] of years) {
   listPage({ path: `/y/${y}/`, title: y, kicker: 'Year', list, groups, sub: `<p class="muted">${plural(list.length, 'photo')}</p>`, description: `Photographs by ${site.name} from ${y}.` });
 }
 
-// Places: text list now; the SVG map is added in a later phase.
+// Places: the map plus a list grouped by region.
 const byRegion = new Map();
 for (const pl of placeList) {
   const key = pl.region?.title || 'Elsewhere';
   if (!byRegion.has(key)) byRegion.set(key, []);
   byRegion.get(key).push(pl);
 }
-// Static US map. Places closer than ~10px merge into one dot that links to the
-// region's list; a single place links straight to its page.
-const usMap = (await readFile(join(ROOT, 'src/us-map.svg'), 'utf8')).trim();
-const project = geoAlbersUsa().scale(1300).translate([487.5, 305]);
+// Static map fitted to the places. Places closer than ~10px merge into one dot
+// that links to the region's list; a single place links straight to its page.
+const map = northAmericaMap(placeList.map((pl) => [pl.lon, pl.lat]));
+const project = map.project;
 const dots = [];
 for (const pl of placeList) {
   const xy = project([pl.lon, pl.lat]);
-  if (!xy) { warnings.push(`${pl.slug}: outside the US map`); continue; }
+  if (!xy) { warnings.push(`${pl.slug}: outside the map`); continue; }
   const near = dots.find((d) => Math.hypot(d.x - xy[0], d.y - xy[1]) < 10);
   if (near) { near.places.push(pl); near.x = (near.x + xy[0]) / 2; near.y = (near.y + xy[1]) / 2; }
   else dots.push({ x: xy[0], y: xy[1], places: [pl] });
@@ -282,14 +282,14 @@ const dotSvg = dots.map((d) => {
   return `<a href="${href}" aria-label="${esc(label)}"><circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(4 + Math.sqrt(n) * 1.6).toFixed(1)}"><title>${esc(label)}</title></circle></a>`;
 }).join('');
 
-const STATES = { UT: 'Utah', CA: 'California', NV: 'Nevada', AZ: 'Arizona', OR: 'Oregon', WA: 'Washington', CO: 'Colorado', ID: 'Idaho', WY: 'Wyoming', MT: 'Montana', NM: 'New Mexico', TX: 'Texas', NY: 'New York', MA: 'Massachusetts', HI: 'Hawaii', AK: 'Alaska' };
+const STATES = { AB: 'Alberta', BC: 'British Columbia', TN: 'Tennessee', UT: 'Utah', CA: 'California', NV: 'Nevada', AZ: 'Arizona', OR: 'Oregon', WA: 'Washington', CO: 'Colorado', ID: 'Idaho', WY: 'Wyoming', MT: 'Montana', NM: 'New Mexico', TX: 'Texas', NY: 'New York', MA: 'Massachusetts', HI: 'Hawaii', AK: 'Alaska' };
 const stateNames = [...new Set(placeList.map((pl) => pl.region?.state).filter(Boolean))].map((c) => STATES[c] || c);
 const listWords = (a) => (a.length < 3 ? a.join(' and ') : `${a.slice(0, -1).join(', ')}, and ${a.at(-1)}`);
 emit('/places/', page({
   path: '/places/', title: 'Places', current: 'places', image: '/og/places.png',
   description: `Where ${site.name}'s photographs were taken.`,
   ogDescription: `${plural(placeList.length, 'place')}${stateNames.length ? ` across ${listWords(stateNames)}` : ''}.`,
-  body: `<div class="head"><span class="lbl">Photography</span><h1>Places</h1><p class="muted">${plural(placeList.length, 'place')} in ${plural(byRegion.size, 'region')}.</p></div><figure class="map"><svg viewBox="0 0 975 610" role="group" aria-label="Map of the United States with a dot for each place">${usMap}<g class="dots">${dotSvg}</g></svg></figure><div class="index" id="place-list">${[...byRegion].map(([r, list]) => indexCol(regionId(r), `${esc(r)}${list[0].region ? `, ${list[0].region.state}` : ''}`, list.map((pl) => `<li><a href="${pl.url}" data-place="${pl.slug}"><span>${esc(pl.title)}${pl.city && pl.city !== pl.title ? `<small>${esc(pl.city)}</small>` : ''}</span><span class="n">${pl.photos.length}</span></a></li>`))).join('')}</div>`,
+  body: `<div class="head"><span class="lbl">Photography</span><h1>Places</h1><p class="muted">${plural(placeList.length, 'place')} in ${plural(byRegion.size, 'region')}.</p></div><figure class="map"><svg viewBox="0 0 ${map.width} ${map.height}" role="group" aria-label="Map of North America with a dot for each place">${map.svg}<g class="dots">${dotSvg}</g></svg></figure><div class="index" id="place-list">${[...byRegion].map(([r, list]) => indexCol(regionId(r), `${esc(r)}${list[0].region ? `, ${list[0].region.state}` : ''}`, list.map((pl) => `<li><a href="${pl.url}" data-place="${pl.slug}"><span>${esc(pl.title)}${pl.city && pl.city !== pl.title ? `<small>${esc(pl.city)}</small>` : ''}</span><span class="n">${pl.photos.length}</span></a></li>`))).join('')}</div>`,
 }));
 for (const pl of placeList) {
   listPage({
@@ -350,7 +350,7 @@ for (const [path, p] of cards) {
 }
 for (const f of await readdir(join(SITE, 'og/p'))) if (!cards.has(`og/p/${f}`)) await rm(join(SITE, 'og/p', f));
 await writeFile(join(SITE, 'og/favorites.json'), JSON.stringify(favorites.map(cardFor)) + '\n');
-const mapSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="${BG}"/><svg x="60" y="25" width="1080" height="580" viewBox="0 0 975 610"><style>.land{fill:#232327}.borders{fill:none;stroke:#3a3a40;stroke-width:1.2}circle{fill:#f2b24c;stroke:${BG};stroke-width:2}</style>${usMap}${dots.map((d) => `<circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(5 + Math.sqrt(d.places.reduce((t, pl) => t + pl.photos.length, 0)) * 2).toFixed(1)}"/>`).join('')}</svg></svg>`;
+const mapSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="${BG}"/><svg x="40" y="20" width="1120" height="590" viewBox="0 0 ${map.width} ${map.height}"><style>.land{fill:#232327}.borders{fill:none;stroke:#3a3a40;stroke-width:1.2}.nation{stroke:#55555c}.inset{fill:${BG};stroke:#3a3a40}circle{fill:#f2b24c;stroke:${BG};stroke-width:2}</style>${map.svg}${dots.map((d) => `<circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${(5 + Math.sqrt(d.places.reduce((t, pl) => t + pl.photos.length, 0)) * 2).toFixed(1)}"/>`).join('')}</svg></svg>`;
 await sharp(Buffer.from(mapSvg)).png({ palette: true }).toFile(join(SITE, 'og/places.png'));
 await writeFile(join(SITE, 'assets', jsName), js);
 await writeFile(join(SITE, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#0f0f10"/><circle cx="16" cy="16" r="7" fill="none" stroke="#e8e6e3" stroke-width="2.5"/><circle cx="23.5" cy="8.5" r="1.6" fill="#f2b24c"/></svg>`);
