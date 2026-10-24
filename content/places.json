@@ -56,6 +56,10 @@
     "new-york": {
       "title": "New York City",
       "state": "NY"
+    },
+    "north-coast": {
+      "title": "North Coast",
+      "state": "CA"
     }
   },
   "places": {
@@ -317,6 +321,13 @@
       "region": "alaska",
       "lat": 63.73,
       "lon": -148.91
+    },
+    "norcal-coast": {
+      "title": "Northern California coast",
+      "city": "",
+      "region": "north-coast",
+      "lat": 38.95,
+      "lon": -123.55
     }
   }
 }
