@@ -51,8 +51,8 @@ Simplified US SVG generated once into the repo; dots placed by a small built-in 
 **7. Later: easter eggs**
 Night sky hint, observatory mode, and the Oct 7 birthday confetti, per DESIGN.md section 9, each verified to add nothing to the main-path Lighthouse run.
 
-**8. Next: North America map** (waiting on the Canada, Alaska and Hawaii photos)
-- Land and borders come from `world-atlas` (countries) plus `us-atlas` (states), and the Canadian provinces are added if a light source is available.
+**8. North America map** (built 2026-10-24 in `scripts/map.mjs`; Hawaii inset appears once a Hawaii place exists)
+- Land and borders come from `world-atlas` (countries) plus `us-atlas` (states). Canadian province lines are not drawn yet.
 - One continuous conic projection covers the lower 48, Canada and Alaska, so Alaska sits in its true spot next to Canada instead of in an inset. Hawaii gets a small boxed inset, shown only once a Hawaii place exists.
 - The map fits itself to the places in `places.json`. It never shows less than the lower 48, and it grows north or west as places are added, so the empty Arctic stays off-screen. Adding a trip needs no map edits.
 - The Places list groups by country, then state or province (for example `Banff, AB`). The `/og/places.png` link preview updates on its own.

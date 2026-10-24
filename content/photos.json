@@ -1,21 +1,939 @@
 {
+  "20190731-dsc0942": {
+    "alt": "A dark, snow-streaked mountain peak under heavy grey clouds above a line of pines.",
+    "title": "Mount Temple",
+    "place": "lake-louise",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20190801-dsc0964": {
+    "alt": "Looking down a valley to the turquoise Lake Louise, with the Victoria Glacier spilling off the peaks behind.",
+    "title": "Lake Louise from above",
+    "place": "lake-louise",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": true
+  },
+  "20190801-dsc0975": {
+    "alt": "A Columbian ground squirrel sitting in short green grass.",
+    "title": "Ground squirrel",
+    "place": "lake-louise",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20190802-dsc1035": {
+    "alt": "The cracked, blue-white ice of the Athabasca Glacier flowing down between mountains under bright clouds.",
+    "title": "Athabasca Glacier",
+    "place": "athabasca-glacier",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20190810-dsc1104": {
+    "alt": "A giraffe peeking out from behind a weathered tree trunk.",
+    "title": "Giraffe",
+    "place": "oakland-zoo",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20190810-dsc1122": {
+    "alt": "A white swan with a bright red bill gliding across dark water, another swan behind.",
+    "title": "Coscoroba swan",
+    "place": "oakland-zoo",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20190810-dsc1149": {
+    "alt": "A grey wolf resting its head on the ground in dry grass.",
+    "title": "Resting wolf",
+    "place": "oakland-zoo",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20190810-dsc1155": {
+    "alt": "A turtle stretching its neck up from a rock in soft, dim light.",
+    "title": "Turtle",
+    "place": "oakland-zoo",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20190810-dsc1159": {
+    "alt": "A Eurasian eagle-owl with bright orange eyes and feathered ear tufts.",
+    "title": "Eagle-owl",
+    "place": "oakland-zoo",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": true
+  },
+  "20190810-dsc1165": {
+    "alt": "A meerkat standing upright on a mound, keeping watch.",
+    "title": "Lookout",
+    "place": "oakland-zoo",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20190810-dsc1171": {
+    "alt": "A plump prairie dog sitting up on bare dirt.",
+    "title": "Prairie dog",
+    "place": "oakland-zoo",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20200710-dsc1348": {
+    "alt": "A black Labrador swimming in clear lake water, looking toward shore.",
+    "title": "Swimmer",
+    "place": "lake-tahoe",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20200710-dsc1349": {
+    "alt": "A wet black Labrador swimming straight at the camera with an orange ball in its mouth.",
+    "title": "Fetch",
+    "place": "lake-tahoe",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": true
+  },
+  "20200711-dsc1426": {
+    "alt": "Fannette Island rising from deep blue water in Emerald Bay, its small stone tea house on top.",
+    "title": "Fannette Island",
+    "place": "lake-tahoe",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20201124-dsc1515": {
+    "alt": "A quiet creek bed of fallen logs and golden autumn trees in a granite valley.",
+    "title": "Valley creek",
+    "place": "yosemite",
+    "collections": [
+      "landscapes",
+      "fall"
+    ],
+    "favorite": false
+  },
+  "20201124-dsc1522": {
+    "alt": "Half Dome framed between tall pines against a clear blue sky.",
+    "title": "Half Dome through the pines",
+    "place": "yosemite",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20201124-dsc1582": {
+    "alt": "Half Dome with a dusting of snow on top, above a dark line of trees and a deep blue sky.",
+    "title": "Half Dome",
+    "place": "yosemite",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20201124-dsc1611": {
+    "alt": "El Capitan and Cathedral Rocks rising above the forested floor of Yosemite Valley.",
+    "title": "Tunnel View",
+    "place": "yosemite",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": true
+  },
+  "20201124-dsc1630": {
+    "alt": "Looking up the red, deeply furrowed trunks of giant sequoias.",
+    "title": "Giant sequoias",
+    "place": "yosemite",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20201125-dsc1640": {
+    "alt": "El Capitan and Half Dome in the distance above a forested ridge.",
+    "title": "Valley view",
+    "place": "yosemite",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20210604-dsc1754": {
+    "alt": "A wide waterfall pouring over pale rock into a pool, a rainbow forming in the spray.",
+    "title": "Shoshone Falls",
+    "place": "shoshone-falls",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": true
+  },
+  "20210608-dsc1806": {
+    "alt": "A white yarrow flower head standing out against a soft, blurred background.",
+    "title": "Yarrow",
+    "place": "glacier",
+    "collections": [
+      "small-things"
+    ],
+    "favorite": false
+  },
+  "20210608-dsc1808": {
+    "alt": "A bright pink bitterroot flower blooming between dark rocks.",
+    "title": "Bitterroot",
+    "place": "glacier",
+    "collections": [
+      "small-things"
+    ],
+    "favorite": false
+  },
+  "20210608-dsc1810": {
+    "alt": "A spike of violet-blue penstemon flowers.",
+    "title": "Penstemon",
+    "place": "glacier",
+    "collections": [
+      "small-things"
+    ],
+    "favorite": false
+  },
+  "20210608-dsc1815": {
+    "alt": "A bison lying in the grass beside a tree trunk, a yellow flower in front of it.",
+    "title": "Bison",
+    "place": "glacier",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": true
+  },
+  "20210608-dsc1821": {
+    "alt": "A young mule deer walking through tall green grass.",
+    "title": "Mule deer",
+    "place": "glacier",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20210608-dsc1829": {
+    "alt": "A yellow-headed blackbird perched on a cattail in a marsh.",
+    "title": "Yellow-headed blackbird",
+    "place": "glacier",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20210609-dsc1854": {
+    "alt": "Low clouds drifting across dark mountains above a still, grey lake.",
+    "title": "Clouds on the lake",
+    "place": "glacier",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20210609-dsc1891": {
+    "alt": "Mist hanging over a forested mountainside under heavy clouds.",
+    "title": "Mist on the ridge",
+    "place": "glacier",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20210609-dsc1892": {
+    "alt": "A calm lake inlet framed by pines, low cloud hiding the far mountains.",
+    "title": "Quiet inlet",
+    "place": "glacier",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
   "20210610-dsc1929": {
     "alt": "Jagged snow-streaked mountains under heavy grey clouds, with dark forest in the valley below.",
     "title": "Storm over the peaks",
-    "place": "",
+    "place": "glacier",
     "collections": [
       "landscapes"
+    ],
+    "favorite": false
+  },
+  "20210610-dsc1942": {
+    "alt": "A sharp peak half-wrapped in cloud above burned, bare trees.",
+    "title": "Peak in the clouds",
+    "place": "glacier",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20210610-dsc1945": {
+    "alt": "A snowy valley glimpsed through dark pines under a grey sky.",
+    "title": "Through the pines",
+    "place": "glacier",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20210611-dsc1969": {
+    "alt": "A forested shoreline and snowy peaks reflected in a calm lake.",
+    "title": "Lake and peaks",
+    "place": "glacier",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20210905-dsc1993": {
+    "alt": "Layers of hazy blue mountain ridges under a peach-colored sunset sky.",
+    "title": "Ridges at sunset",
+    "place": "",
+    "collections": [
+      "landscapes",
+      "golden-blue-hour"
+    ],
+    "favorite": false,
+    "album": false,
+    "_note": "Taken 2021-09-05 but filed in the Boston folder; kept out of the Boston album."
+  },
+  "20220710-dsc2047": {
+    "alt": "Still marsh water reflecting a bright cloudy sky, with dead trees and mountains beyond.",
+    "title": "Marsh light",
+    "place": "portage-valley",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220710-dsc2063": {
+    "alt": "A snowy peak with low cloud on its flank above a green marsh and spruce forest.",
+    "title": "Clouds on the mountain",
+    "place": "portage-valley",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220710-dsc2065": {
+    "alt": "A grey glacial river winding past green brush toward snowy mountains.",
+    "title": "Glacial river",
+    "place": "portage-valley",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220710-dsc2083": {
+    "alt": "Spruce forest stretching toward a range of snow-streaked mountains under pale clouds.",
+    "title": "Toward the range",
+    "place": "portage-valley",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220710-dsc2107": {
+    "alt": "A yellow-and-blue Alaska Railroad locomotive curving along the base of a green hillside.",
+    "title": "Alaska Railroad",
+    "place": "portage-valley",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220710-dsc2110": {
+    "alt": "Thin waterfalls threading down a lush green slope below jagged snowy peaks.",
+    "title": "Falling water",
+    "place": "portage-valley",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220711-dsc2174": {
+    "alt": "A dark, forested cliff dropping into green water.",
+    "title": "Fjord wall",
+    "place": "kenai-fjords",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220711-dsc2230": {
+    "alt": "Grey rocky shore, spruce trees, and a misty mountain at the edge of a fjord.",
+    "title": "Fjord shore",
+    "place": "kenai-fjords",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220711-dsc2233": {
+    "alt": "A sea cave cut into pale rock cliffs topped with spruce trees.",
+    "title": "Sea cave",
+    "place": "kenai-fjords",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220711-dsc2234": {
+    "alt": "Grey water stretching to a distant glacier under low blue-grey clouds.",
+    "title": "Glacier on the horizon",
+    "place": "kenai-fjords",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220711-dsc2252": {
+    "alt": "A white mountain goat lying on a lichen-covered rock ledge above the spruce.",
+    "title": "Mountain goat",
+    "place": "kenai-fjords",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20220711-dsc2266": {
+    "alt": "Steller sea lions piled on a rock, one roaring, with a gull perched above.",
+    "title": "Sea lions",
+    "place": "kenai-fjords",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": true
+  },
+  "20220711-dsc2274": {
+    "alt": "Two tall sea stacks rising from the water in front of a misty forested shore.",
+    "title": "Sea stacks",
+    "place": "kenai-fjords",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": true
+  },
+  "20220711-dsc2276": {
+    "alt": "A small rocky island topped with spruce trees, rising out of calm grey water.",
+    "title": "Island of trees",
+    "place": "kenai-fjords",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20220713-dsc2293": {
+    "alt": "A moose half hidden among spruce trees.",
+    "title": "Moose",
+    "place": "denali",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20220713-dsc2301": {
+    "alt": "A Siamese cat standing on mossy rock beside a small stone cairn.",
+    "title": "Trail cat",
+    "place": "denali",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20220713-dsc2305": {
+    "alt": "Close portrait of a weathered sled dog with a grey-and-tan coat.",
+    "title": "Sled dog",
+    "place": "denali",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20220713-dsc2307": {
+    "alt": "A sled dog with striking pale blue eyes staring into the camera.",
+    "title": "Blue eyes",
+    "place": "denali",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": true
+  },
+  "20230609-dsc2373": {
+    "alt": "A small cascade tumbling over mossy boulders among rhododendrons.",
+    "title": "Mountain stream",
+    "place": "great-smoky-mountains",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20230609-dsc2378": {
+    "alt": "A waterfall pouring over a dark rock ledge in a bright green forest.",
+    "title": "Hidden falls",
+    "place": "great-smoky-mountains",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20230610-dsc2410": {
+    "alt": "A rounded forested ridge rising above dense green treetops.",
+    "title": "Green ridges",
+    "place": "great-smoky-mountains",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20230610-dsc2428": {
+    "alt": "The sun bursting through the canopy of tall forest trees.",
+    "title": "Sun through the canopy",
+    "place": "great-smoky-mountains",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20230610-dsc2436": {
+    "alt": "A calm, clear creek winding through lush green forest.",
+    "title": "Forest creek",
+    "place": "great-smoky-mountains",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20230610-dsc2440": {
+    "alt": "A wide green meadow below forested hills, framed by an overhanging branch.",
+    "title": "Cades Cove",
+    "place": "great-smoky-mountains",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20240304-dsc2534": {
+    "alt": "Looking down a deep forested canyon between red and tan cliffs.",
+    "title": "Oak Creek Canyon",
+    "place": "oak-creek-canyon",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20240305-dsc2538": {
+    "alt": "A creek running through bare spring trees at the bottom of a canyon.",
+    "title": "West Fork",
+    "place": "oak-creek-canyon",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20240305-dsc2545": {
+    "alt": "Inside the stone ruins of an old lodge, sunlight falling through a collapsed wooden roof.",
+    "title": "Old lodge ruins",
+    "place": "oak-creek-canyon",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20240305-dsc2565": {
+    "alt": "A clear creek winding between red rock banks and tall pines.",
+    "title": "Red rock creek",
+    "place": "oak-creek-canyon",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20240305-dsc2604": {
+    "alt": "Red rock buttes glowing orange at sunset under soft clouds.",
+    "title": "Sedona glow",
+    "place": "sedona",
+    "collections": [
+      "landscapes",
+      "golden-blue-hour"
+    ],
+    "favorite": true
+  },
+  "20240307-dsc2687": {
+    "alt": "Smooth, flowing orange sandstone walls glowing inside a slot canyon.",
+    "title": "Antelope Canyon",
+    "place": "antelope-canyon",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": true
+  },
+  "20240307-dsc2701": {
+    "alt": "Deep red and purple curves of a narrow slot canyon reaching up to a sliver of light.",
+    "title": "Slot canyon",
+    "place": "antelope-canyon",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20240308-dsc2721": {
+    "alt": "A cascade of white water over red rocks beneath a twisted overhanging branch.",
+    "title": "Virgin River",
+    "place": "zion",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20240308-dsc2764": {
+    "alt": "A rock squirrel perched on a pale sandstone ledge.",
+    "title": "Rock squirrel",
+    "place": "zion",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20240308-dsc2780": {
+    "alt": "The Virgin River winding through bare winter cottonwoods between towering red cliffs.",
+    "title": "Zion Canyon",
+    "place": "zion",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": true
+  },
+  "20240308-dsc2803": {
+    "alt": "Sunlit red and white sandstone peaks rising above the canyon under a clear blue sky.",
+    "title": "Canyon walls",
+    "place": "zion",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2867": {
+    "alt": "Glass towers and TD Garden reflected over the water at North Station.",
+    "title": "North Station",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2889": {
+    "alt": "The Civil War monument in Charlestown's Winthrop Square, a robed figure above two soldiers, framed by trees.",
+    "title": "Winthrop Square",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2897": {
+    "alt": "Boats tied up in a harbor marina, the Bunker Hill Monument rising behind brick buildings.",
+    "title": "Charlestown harbor",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2905": {
+    "alt": "Rows of old slate gravestones under big green trees in a historic burying ground.",
+    "title": "Burying ground",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2908": {
+    "alt": "The white steeple of Old North Church at the end of a narrow street of brick buildings.",
+    "title": "Old North Church",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": true
+  },
+  "20251005-dsc2923": {
+    "alt": "A narrow North End street leading to a red brick church, fire escapes overhead.",
+    "title": "North End",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2926": {
+    "alt": "A cobblestone lane of old brick buildings and the Union Oyster House sign, modern towers behind.",
+    "title": "Union Street",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2935": {
+    "alt": "The Custom House clock tower framed between dark brick buildings against a blue sky.",
+    "title": "Custom House Tower",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2937": {
+    "alt": "Old brick buildings and a white steeple dwarfed by a blue glass tower.",
+    "title": "Old and new",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2940": {
+    "alt": "The ornate granite facade of Old City Hall with an American flag over the entrance.",
+    "title": "Old City Hall",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2946": {
+    "alt": "A narrow brick lane on Beacon Hill with an American flag and a small red car.",
+    "title": "Beacon Hill",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2948": {
+    "alt": "A shaded brick alley with ivy, a flag, and a red car in a patch of sun.",
+    "title": "Side street",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2956": {
+    "alt": "Park Street Church's white steeple and brick buildings glowing orange at sunset beside a crane.",
+    "title": "Park Street at sunset",
+    "place": "boston",
+    "collections": [
+      "architecture",
+      "golden-blue-hour"
+    ],
+    "favorite": false
+  },
+  "20251005-dsc2960": {
+    "alt": "The Custom House tower lit gold against a dark evening sky.",
+    "title": "Custom House at night",
+    "place": "boston",
+    "collections": [
+      "architecture",
+      "night"
+    ],
+    "favorite": false
+  },
+  "20251006-dsc2965": {
+    "alt": "The red brick and patterned slate of Harvard's Memorial Hall against a deep blue sky.",
+    "title": "Memorial Hall",
+    "place": "harvard",
+    "collections": [
+      "architecture"
     ],
     "favorite": false
   },
   "20251006-dsc2967": {
     "alt": "A stained-glass rose window and five tall arched panels glowing in jewel colors inside a dark church.",
     "title": "Rose window",
-    "place": "",
+    "place": "boston",
     "collections": [
       "architecture"
     ],
     "favorite": true
+  },
+  "20251006-dsc2969": {
+    "alt": "Tall trees and old gravestones in a green, overgrown cemetery.",
+    "title": "Old cemetery",
+    "place": "boston",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20251008-dsc2990": {
+    "alt": "Looking up at the Custom House tower in black and white, framed by a column and a street lamp.",
+    "title": "Custom House, looking up",
+    "place": "boston",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251008-dsc2994": {
+    "alt": "A big round tree in full orange fall color above a marsh of golden grass.",
+    "title": "Orange tree",
+    "place": "boston",
+    "collections": [
+      "fall"
+    ],
+    "favorite": true
+  },
+  "20251008-dsc3004": {
+    "alt": "A riverbank of trees turning yellow and orange under a pale sky.",
+    "title": "Turning leaves",
+    "place": "boston",
+    "collections": [
+      "fall",
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20251009-dsc3029": {
+    "alt": "Looking north over Midtown's towers to Central Park and the city beyond.",
+    "title": "Over Central Park",
+    "place": "midtown",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": true
+  },
+  "20251010-dsc3070": {
+    "alt": "The Lower Manhattan skyline and One World Trade Center seen across the harbor.",
+    "title": "Lower Manhattan",
+    "place": "statue-of-liberty",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251010-dsc3097": {
+    "alt": "The Statue of Liberty raising her torch against bright white clouds.",
+    "title": "Lady Liberty",
+    "place": "statue-of-liberty",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251010-dsc3109": {
+    "alt": "The brick buildings of Ellis Island behind trees, seen across choppy water.",
+    "title": "Ellis Island",
+    "place": "statue-of-liberty",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251010-dsc3115": {
+    "alt": "A deep canyon of old office buildings along a busy downtown street.",
+    "title": "Downtown canyon",
+    "place": "lower-manhattan",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251010-dsc3116": {
+    "alt": "Trinity Church's Gothic spire among glass towers, traffic lights in front.",
+    "title": "Trinity Church",
+    "place": "lower-manhattan",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251010-dsc3118": {
+    "alt": "The white ribs of the Oculus beside a blue glass tower.",
+    "title": "Oculus",
+    "place": "lower-manhattan",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251010-dsc3136": {
+    "alt": "Water falling into the dark square void of the 9/11 Memorial at night, towers lit behind.",
+    "title": "9/11 Memorial",
+    "place": "lower-manhattan",
+    "collections": [
+      "architecture",
+      "night"
+    ],
+    "favorite": false
+  },
+  "20251010-dsc3149": {
+    "alt": "Lower Manhattan's office towers lit up against a cloudy night sky.",
+    "title": "City at night",
+    "place": "lower-manhattan",
+    "collections": [
+      "architecture",
+      "night"
+    ],
+    "favorite": false
+  },
+  "20251011-dsc3154": {
+    "alt": "The Manhattan Bridge framed between brick buildings on a grey day in DUMBO.",
+    "title": "DUMBO",
+    "place": "dumbo",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": true
+  },
+  "20251011-dsc3161": {
+    "alt": "The Manhattan Bridge crossing a grey East River under heavy cloud.",
+    "title": "Manhattan Bridge",
+    "place": "dumbo",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20251011-dsc3162": {
+    "alt": "A pink Tesla Cybertruck painted with Kirby on a wet street corner.",
+    "title": "Kirby truck",
+    "place": "dumbo",
+    "collections": [],
+    "favorite": false
+  },
+  "20251011-dsc3169": {
+    "alt": "Glowing billboards and signs in a dark Times Square.",
+    "title": "Times Square",
+    "place": "midtown",
+    "collections": [
+      "architecture",
+      "night"
+    ],
+    "favorite": false
   },
   "20260327-dsc3179": {
     "alt": "A narrow dirt trail through bare early-spring aspens and dry grass.",
@@ -125,11 +1043,29 @@
     ],
     "favorite": false
   },
+  "20260625-dsc3286": {
+    "alt": "The Ferry Building's departures board hanging above the terminal concourse.",
+    "title": "Departures",
+    "place": "ferry-building",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
   "20260625-dsc3295": {
     "alt": "The sun glaring through thin cloud above palm trees and an old street lamp.",
     "title": "Embarcadero sun",
     "place": "ferry-building",
     "collections": [],
+    "favorite": false
+  },
+  "20260625-dsc3312": {
+    "alt": "Boats in the marina at Pier 39 with a Ferris wheel and city hills behind.",
+    "title": "Pier 39 marina",
+    "place": "pier-39",
+    "collections": [
+      "architecture"
+    ],
     "favorite": false
   },
   "20260625-dsc3316": {
@@ -150,6 +1086,15 @@
     ],
     "favorite": false
   },
+  "20260625-dsc3326": {
+    "alt": "The San Francisco skyline under a dark grey sky, seen over trees.",
+    "title": "Storm over the city",
+    "place": "golden-gate",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
   "20260625-dsc3331": {
     "alt": "The San Francisco skyline low on the horizon across the bay under a moody, lit-up cloud bank.",
     "title": "The city across the water",
@@ -158,6 +1103,13 @@
       "landscapes",
       "golden-blue-hour"
     ],
+    "favorite": false
+  },
+  "20260625-dsc3340": {
+    "alt": "A red-hulled tanker pushing through grey bay water.",
+    "title": "Tanker",
+    "place": "golden-gate",
+    "collections": [],
     "favorite": false
   },
   "20260625-dsc3348": {
@@ -181,10 +1133,47 @@
     ],
     "favorite": true
   },
+  "20260704-dsc3385": {
+    "alt": "The white Point Loma lighthouse and red-roofed keepers' houses above the ocean.",
+    "title": "Point Loma Lighthouse",
+    "place": "cabrillo",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": true
+  },
+  "20260704-dsc3388": {
+    "alt": "A western fence lizard basking on a rough rock.",
+    "title": "Fence lizard",
+    "place": "cabrillo",
+    "collections": [
+      "wildlife",
+      "small-things"
+    ],
+    "favorite": false
+  },
   "20260704-dsc3403": {
     "alt": "Waves breaking white over layered sandstone rocks along the San Diego coast.",
     "title": "Breakers",
     "place": "san-diego-coast",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20260704-dsc3405": {
+    "alt": "Waves washing into a cove between layered sandstone cliffs.",
+    "title": "Layered cliffs",
+    "place": "cabrillo",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20260704-dsc3406": {
+    "alt": "Red and gold sandstone cliffs above a tide pool under a blue sky.",
+    "title": "Tide pool cliffs",
+    "place": "cabrillo",
     "collections": [
       "landscapes"
     ],
@@ -197,6 +1186,24 @@
     "collections": [
       "wildlife",
       "small-things"
+    ],
+    "favorite": false
+  },
+  "20260704-dsc3426": {
+    "alt": "The white statue of Cabrillo against a deep blue sky streaked with cloud.",
+    "title": "Cabrillo",
+    "place": "cabrillo",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20260704-dsc3438": {
+    "alt": "A wisp of cloud lit gold by the setting sun in a blue sky.",
+    "title": "Gold wisp",
+    "place": "san-diego-coast",
+    "collections": [
+      "golden-blue-hour"
     ],
     "favorite": false
   },
@@ -227,12 +1234,30 @@
     ],
     "favorite": true
   },
+  "20260705-dsc3465": {
+    "alt": "A California ground squirrel sitting in dry leaves and twigs.",
+    "title": "Ground squirrel",
+    "place": "balboa-park",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
   "20260705-dsc3469": {
     "alt": "A mother mallard walking across a lawn with her duckling trailing behind.",
     "title": "Follow the leader",
     "place": "balboa-park",
     "collections": [
       "wildlife"
+    ],
+    "favorite": false
+  },
+  "20260705-dsc3478": {
+    "alt": "Inside the Botanical Building's wooden lattice dome, full of tropical plants.",
+    "title": "Under the lattice",
+    "place": "balboa-park",
+    "collections": [
+      "architecture"
     ],
     "favorite": false
   },
@@ -263,6 +1288,24 @@
     ],
     "favorite": false
   },
+  "20260705-dsc3499": {
+    "alt": "The Little Italy sign arching over a street of shops and parked cars.",
+    "title": "Little Italy",
+    "place": "little-italy",
+    "collections": [
+      "architecture"
+    ],
+    "favorite": false
+  },
+  "20260706-dsc3511": {
+    "alt": "A capybara sitting chin-deep in murky water.",
+    "title": "Capybara",
+    "place": "balboa-park",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": true
+  },
   "20260706-dsc3524": {
     "alt": "The sun setting into the Pacific below a band of gold clouds, light glittering on the water.",
     "title": "Pacific sunset",
@@ -282,17 +1325,36 @@
     ],
     "favorite": false
   },
-  "20260709-dsc3557": {
-    "alt": "A dense field of stars in a black night sky.",
-    "title": "Big Bear stars",
+  "20260709-dsc3563": {
+    "alt": "A meadow of tall green grass around a small blue lake ringed by pines.",
+    "title": "Mountain meadow",
     "place": "big-bear-lake",
     "collections": [
-      "night"
+      "landscapes"
     ],
     "favorite": false
   },
-  "20260709-dsc3563": {
-    "alt": "A meadow of tall green grass around a small blue lake ringed by pines.",
+  "20260709-dsc3573": {
+    "alt": "A swallowtail butterfly on an orange flower among ferns.",
+    "title": "Swallowtail",
+    "place": "big-bear-lake",
+    "collections": [
+      "wildlife",
+      "small-things"
+    ],
+    "favorite": false
+  },
+  "20260709-dsc3577": {
+    "alt": "Tall pines rising from a bright green forest floor.",
+    "title": "Pine forest",
+    "place": "big-bear-lake",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20260709-dsc3578": {
+    "alt": "A dry meadow ringed by tall pines under a clear blue sky.",
     "title": "Mountain meadow",
     "place": "big-bear-lake",
     "collections": [
@@ -303,6 +1365,15 @@
   "20260907-dsc3580": {
     "alt": "The sun setting over the Great Salt Lake behind a silhouette of tall grass.",
     "title": "Salt Lake sunset",
+    "place": "salt-lake-city",
+    "collections": [
+      "golden-blue-hour"
+    ],
+    "favorite": false
+  },
+  "20260907-dsc3588": {
+    "alt": "The sun setting behind mountains over the Great Salt Lake, the sky deep orange.",
+    "title": "Orange sunset",
     "place": "salt-lake-city",
     "collections": [
       "golden-blue-hour"
@@ -337,6 +1408,54 @@
     ],
     "favorite": true
   },
+  "20260921-dsc3601": {
+    "alt": "Two toads tucked into a small rock burrow.",
+    "title": "Burrow",
+    "place": "loveland-aquarium",
+    "collections": [
+      "wildlife",
+      "small-things"
+    ],
+    "favorite": false
+  },
+  "20260921-dsc3610": {
+    "alt": "A black-and-orange poison dart frog on green moss.",
+    "title": "Poison dart frog",
+    "place": "loveland-aquarium",
+    "collections": [
+      "wildlife",
+      "small-things"
+    ],
+    "favorite": false
+  },
+  "20260921-dsc3616": {
+    "alt": "A binturong asleep on a branch, half hidden by leaves.",
+    "title": "Binturong",
+    "place": "loveland-aquarium",
+    "collections": [
+      "wildlife"
+    ],
+    "favorite": false
+  },
+  "20261004-dsc3623": {
+    "alt": "Sunlight streaming through tall evergreens onto a golden autumn meadow.",
+    "title": "Morning light",
+    "place": "little-cottonwood",
+    "collections": [
+      "landscapes",
+      "fall"
+    ],
+    "favorite": false
+  },
+  "20261004-dsc3627": {
+    "alt": "Tall firs in warm backlight with a grey peak behind.",
+    "title": "Firs and peak",
+    "place": "little-cottonwood",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
   "20261004-dsc3639": {
     "alt": "A small alpine lake framed by evergreens, with fall color and granite peaks behind under bright clouds.",
     "title": "Hidden lake",
@@ -346,6 +1465,15 @@
       "fall"
     ],
     "favorite": true
+  },
+  "20261004-dsc3644": {
+    "alt": "Rugged granite peaks and evergreens under puffy white clouds.",
+    "title": "Granite ridge",
+    "place": "little-cottonwood",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
   },
   "20261004-dsc3648": {
     "alt": "A grey squirrel crouched among dry plants and red fallen leaves beside a granite boulder.",
@@ -376,9 +1504,38 @@
     ],
     "favorite": false
   },
+  "20261004-dsc3666": {
+    "alt": "Looking up through white aspen trunks into bright yellow leaves.",
+    "title": "Aspen canopy",
+    "place": "little-cottonwood",
+    "collections": [
+      "fall"
+    ],
+    "favorite": false
+  },
   "20261004-dsc3669": {
     "alt": "A grove of aspens in blazing orange and gold against a deep blue sky.",
     "title": "Aspen fire",
+    "place": "little-cottonwood",
+    "collections": [
+      "fall",
+      "landscapes"
+    ],
+    "favorite": true
+  },
+  "20261004-dsc3671": {
+    "alt": "A hillside of yellow aspens against a deep blue sky.",
+    "title": "Yellow hillside",
+    "place": "little-cottonwood",
+    "collections": [
+      "fall",
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20261004-dsc3674": {
+    "alt": "Orange and yellow aspens below a pine-covered slope.",
+    "title": "Orange and gold",
     "place": "little-cottonwood",
     "collections": [
       "fall",
@@ -396,6 +1553,42 @@
     ],
     "favorite": false
   },
+  "20261010-dsc3691": {
+    "alt": "Stalactites and flowstone lit warm orange inside a limestone cave.",
+    "title": "Cavern",
+    "place": "angels-camp",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": true
+  },
+  "20261010-dsc3693": {
+    "alt": "Sweeping folds of cave rock and dripping formations lit gold.",
+    "title": "Cave curtains",
+    "place": "angels-camp",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20261010-dsc3698": {
+    "alt": "Rough cave formations glowing in pools of light.",
+    "title": "Underground",
+    "place": "angels-camp",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20261010-dsc3709": {
+    "alt": "A dry foothill canyon with oaks and a bare tree under a blue sky.",
+    "title": "Foothill canyon",
+    "place": "angels-camp",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
   "20261010-dsc3711": {
     "alt": "A small creek running over pale rocks beneath leaning green trees.",
     "title": "Creek",
@@ -405,12 +1598,40 @@
     ],
     "favorite": false
   },
+  "20261010-dsc3739": {
+    "alt": "A young buck with small antlers, backlit by the evening sun.",
+    "title": "Young buck",
+    "place": "angels-camp",
+    "collections": [
+      "wildlife",
+      "golden-blue-hour"
+    ],
+    "favorite": true
+  },
   "20261010-dsc3744": {
     "alt": "The low sun glowing through a tangle of oak branches at dusk.",
     "title": "Through the oaks",
     "place": "angels-camp",
     "collections": [
       "golden-blue-hour"
+    ],
+    "favorite": false
+  },
+  "20261010-dsc3750": {
+    "alt": "A layer of orange sunset glowing behind a dark hill, framed by oak branches.",
+    "title": "Foothill sunset",
+    "place": "angels-camp",
+    "collections": [
+      "golden-blue-hour"
+    ],
+    "favorite": false
+  },
+  "20261011-dsc3759": {
+    "alt": "Looking straight up a giant sequoia's trunk into its branches.",
+    "title": "Straight up",
+    "place": "calaveras-big-trees",
+    "collections": [
+      "landscapes"
     ],
     "favorite": false
   },
@@ -423,12 +1644,39 @@
     ],
     "favorite": false
   },
+  "20261011-dsc3773": {
+    "alt": "A tall, broken dead snag against a blue sky with white clouds.",
+    "title": "Snag",
+    "place": "calaveras-big-trees",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
+  "20261011-dsc3780": {
+    "alt": "Three giant sequoia trunks rising together into the sky.",
+    "title": "Three sisters",
+    "place": "calaveras-big-trees",
+    "collections": [
+      "landscapes"
+    ],
+    "favorite": false
+  },
   "20261011-dsc3785": {
     "alt": "A black raven perched on a bare branch against a pine trunk.",
     "title": "Raven",
     "place": "calaveras-big-trees",
     "collections": [
       "wildlife"
+    ],
+    "favorite": false
+  },
+  "20261011-dsc3789": {
+    "alt": "A calm lake reflecting a line of tall pines under white clouds.",
+    "title": "Forest lake",
+    "place": "calaveras-big-trees",
+    "collections": [
+      "landscapes"
     ],
     "favorite": false
   },
