@@ -307,16 +307,16 @@
     "favorite": false
   },
   "20210905-dsc1993": {
-    "alt": "Layers of hazy blue mountain ridges under a peach-colored sunset sky.",
-    "title": "Ridges at sunset",
-    "place": "",
+    "alt": "Layers of hazy blue coastal ridges under a peach-colored sunset sky.",
+    "title": "Coast range at sunset",
+    "place": "norcal-coast",
     "collections": [
       "landscapes",
       "golden-blue-hour"
     ],
     "favorite": false,
     "album": false,
-    "_note": "Taken 2021-09-05 but filed in the Boston folder; kept out of the Boston album."
+    "_note": "Northern California coast, Sept 2021. A single photo, so it stays out of any album."
   },
   "20220710-dsc2047": {
     "alt": "Still marsh water reflecting a bright cloudy sky, with dead trees and mountains beyond.",
@@ -774,7 +774,7 @@
   "20251006-dsc2967": {
     "alt": "A stained-glass rose window and five tall arched panels glowing in jewel colors inside a dark church.",
     "title": "Rose window",
-    "place": "boston",
+    "place": "harvard",
     "collections": [
       "architecture"
     ],
