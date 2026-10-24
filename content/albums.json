@@ -1,10 +1,87 @@
 {
   "_help": "Keyed by album slug (the folder name without the YYYY-MM prefix, lowercased). Every field is optional. clockOffsetHours shifts the camera's EXIF times to local time for display.",
-  "park-city": { "region": "utah", "clockOffsetHours": -2 },
-  "san-pablo-reservoir": { "region": "bay-area", "clockOffsetHours": -3 },
-  "san-francisco": { "region": "bay-area", "clockOffsetHours": -3 },
-  "san-diego-big-bear-lake": { "title": "San Diego & Big Bear", "region": "socal", "clockOffsetHours": -3 },
-  "salt-lake-city": { "region": "utah", "clockOffsetHours": -2 },
-  "little-cottonwood": { "title": "Little Cottonwood Canyon", "region": "utah", "clockOffsetHours": -2 },
-  "angels-camp": { "title": "Angels Camp", "region": "gold-country", "clockOffsetHours": -3 }
+  "park-city": {
+    "region": "utah",
+    "clockOffsetHours": -2
+  },
+  "san-pablo-reservoir": {
+    "region": "bay-area",
+    "clockOffsetHours": -3
+  },
+  "san-francisco": {
+    "region": "bay-area",
+    "clockOffsetHours": -3
+  },
+  "san-diego-big-bear-lake": {
+    "title": "San Diego & Big Bear",
+    "region": "socal",
+    "clockOffsetHours": -3
+  },
+  "salt-lake-city": {
+    "region": "utah",
+    "clockOffsetHours": -2
+  },
+  "little-cottonwood": {
+    "title": "Little Cottonwood Canyon",
+    "region": "utah",
+    "clockOffsetHours": -2
+  },
+  "angels-camp": {
+    "title": "Angels Camp",
+    "region": "gold-country",
+    "clockOffsetHours": -3
+  },
+  "banff": {
+    "title": "Banff & Jasper",
+    "region": "canadian-rockies",
+    "clockOffsetHours": -2
+  },
+  "oakland-zoo": {
+    "region": "bay-area",
+    "clockOffsetHours": -3
+  },
+  "lake-tahoe": {
+    "region": "sierra-nevada",
+    "clockOffsetHours": -3
+  },
+  "yosemite": {
+    "region": "sierra-nevada",
+    "clockOffsetHours": -3
+  },
+  "glacier-national-park": {
+    "region": "montana",
+    "clockOffsetHours": -2
+  },
+  "alaska": {
+    "region": "alaska",
+    "clockOffsetHours": -4
+  },
+  "tennessee": {
+    "title": "Great Smoky Mountains",
+    "region": "smokies",
+    "clockOffsetHours": 0
+  },
+  "northern-arizona": {
+    "region": "northern-arizona",
+    "clockOffsetHours": -2
+  },
+  "zion": {
+    "title": "Zion",
+    "region": "southern-utah",
+    "clockOffsetHours": -2
+  },
+  "boston": {
+    "region": "boston",
+    "clockOffsetHours": 0
+  },
+  "new-york": {
+    "title": "New York City",
+    "region": "new-york",
+    "clockOffsetHours": 0
+  },
+  "loveland-living-planet-aquarium": {
+    "title": "Loveland Living Planet Aquarium",
+    "region": "utah",
+    "clockOffsetHours": -2
+  }
 }

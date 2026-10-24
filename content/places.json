@@ -1,24 +1,322 @@
 {
   "_help": "Places are named once; photos point to them by key. lat/lon are typed in by hand (no GPS in the photos). region keys are defined in regions below.",
   "regions": {
-    "utah": { "title": "Utah", "state": "UT" },
-    "bay-area": { "title": "Bay Area", "state": "CA" },
-    "socal": { "title": "SoCal", "state": "CA" },
-    "gold-country": { "title": "Gold Country", "state": "CA" }
+    "utah": {
+      "title": "Utah",
+      "state": "UT"
+    },
+    "bay-area": {
+      "title": "Bay Area",
+      "state": "CA"
+    },
+    "socal": {
+      "title": "SoCal",
+      "state": "CA"
+    },
+    "gold-country": {
+      "title": "Gold Country",
+      "state": "CA"
+    },
+    "canadian-rockies": {
+      "title": "Canadian Rockies",
+      "state": "AB"
+    },
+    "sierra-nevada": {
+      "title": "Sierra Nevada",
+      "state": "CA"
+    },
+    "idaho": {
+      "title": "Idaho",
+      "state": "ID"
+    },
+    "montana": {
+      "title": "Montana",
+      "state": "MT"
+    },
+    "alaska": {
+      "title": "Alaska",
+      "state": "AK"
+    },
+    "smokies": {
+      "title": "Smoky Mountains",
+      "state": "TN"
+    },
+    "northern-arizona": {
+      "title": "Northern Arizona",
+      "state": "AZ"
+    },
+    "southern-utah": {
+      "title": "Southern Utah",
+      "state": "UT"
+    },
+    "boston": {
+      "title": "Boston",
+      "state": "MA"
+    },
+    "new-york": {
+      "title": "New York City",
+      "state": "NY"
+    }
   },
   "places": {
-    "park-city": { "title": "Park City", "city": "Park City", "region": "utah", "lat": 40.6461, "lon": -111.4980 },
-    "salt-lake-city": { "title": "Salt Lake City", "city": "Salt Lake City", "region": "utah", "lat": 40.7608, "lon": -111.8910 },
-    "little-cottonwood": { "title": "Little Cottonwood Canyon", "city": "Sandy", "region": "utah", "lat": 40.5730, "lon": -111.7270 },
-    "san-pablo-reservoir": { "title": "San Pablo Reservoir", "city": "El Sobrante", "region": "bay-area", "lat": 37.9230, "lon": -122.2580 },
-    "ferry-building": { "title": "Ferry Building", "city": "San Francisco", "region": "bay-area", "lat": 37.7955, "lon": -122.3937 },
-    "pier-39": { "title": "Pier 39", "city": "San Francisco", "region": "bay-area", "lat": 37.8087, "lon": -122.4098 },
-    "golden-gate": { "title": "Golden Gate Bridge", "city": "San Francisco", "region": "bay-area", "lat": 37.8199, "lon": -122.4783 },
-    "balboa-park": { "title": "Balboa Park", "city": "San Diego", "region": "socal", "lat": 32.7341, "lon": -117.1446 },
-    "uss-midway": { "title": "USS Midway", "city": "San Diego", "region": "socal", "lat": 32.7137, "lon": -117.1751 },
-    "san-diego-coast": { "title": "San Diego coast", "city": "San Diego", "region": "socal", "lat": 32.8400, "lon": -117.2800 },
-    "big-bear-lake": { "title": "Big Bear Lake", "city": "Big Bear Lake", "region": "socal", "lat": 34.2439, "lon": -116.9114 },
-    "angels-camp": { "title": "Angels Camp", "city": "Angels Camp", "region": "gold-country", "lat": 38.0683, "lon": -120.5397 },
-    "calaveras-big-trees": { "title": "Calaveras Big Trees", "city": "Arnold", "region": "gold-country", "lat": 38.2772, "lon": -120.3071 }
+    "park-city": {
+      "title": "Park City",
+      "city": "Park City",
+      "region": "utah",
+      "lat": 40.6461,
+      "lon": -111.498
+    },
+    "salt-lake-city": {
+      "title": "Salt Lake City",
+      "city": "Salt Lake City",
+      "region": "utah",
+      "lat": 40.7608,
+      "lon": -111.891
+    },
+    "little-cottonwood": {
+      "title": "Little Cottonwood Canyon",
+      "city": "Sandy",
+      "region": "utah",
+      "lat": 40.573,
+      "lon": -111.727
+    },
+    "san-pablo-reservoir": {
+      "title": "San Pablo Reservoir",
+      "city": "El Sobrante",
+      "region": "bay-area",
+      "lat": 37.923,
+      "lon": -122.258
+    },
+    "ferry-building": {
+      "title": "Ferry Building",
+      "city": "San Francisco",
+      "region": "bay-area",
+      "lat": 37.7955,
+      "lon": -122.3937
+    },
+    "pier-39": {
+      "title": "Pier 39",
+      "city": "San Francisco",
+      "region": "bay-area",
+      "lat": 37.8087,
+      "lon": -122.4098
+    },
+    "golden-gate": {
+      "title": "Golden Gate Bridge",
+      "city": "San Francisco",
+      "region": "bay-area",
+      "lat": 37.8199,
+      "lon": -122.4783
+    },
+    "balboa-park": {
+      "title": "Balboa Park",
+      "city": "San Diego",
+      "region": "socal",
+      "lat": 32.7341,
+      "lon": -117.1446
+    },
+    "uss-midway": {
+      "title": "USS Midway",
+      "city": "San Diego",
+      "region": "socal",
+      "lat": 32.7137,
+      "lon": -117.1751
+    },
+    "san-diego-coast": {
+      "title": "San Diego coast",
+      "city": "San Diego",
+      "region": "socal",
+      "lat": 32.84,
+      "lon": -117.28
+    },
+    "big-bear-lake": {
+      "title": "Big Bear Lake",
+      "city": "Big Bear Lake",
+      "region": "socal",
+      "lat": 34.2439,
+      "lon": -116.9114
+    },
+    "angels-camp": {
+      "title": "Angels Camp",
+      "city": "Angels Camp",
+      "region": "gold-country",
+      "lat": 38.0683,
+      "lon": -120.5397
+    },
+    "calaveras-big-trees": {
+      "title": "Calaveras Big Trees",
+      "city": "Arnold",
+      "region": "gold-country",
+      "lat": 38.2772,
+      "lon": -120.3071
+    },
+    "lake-louise": {
+      "title": "Lake Louise",
+      "city": "Lake Louise",
+      "region": "canadian-rockies",
+      "lat": 51.4254,
+      "lon": -116.1773
+    },
+    "athabasca-glacier": {
+      "title": "Athabasca Glacier",
+      "city": "Columbia Icefield",
+      "region": "canadian-rockies",
+      "lat": 52.219,
+      "lon": -117.234
+    },
+    "oakland-zoo": {
+      "title": "Oakland Zoo",
+      "city": "Oakland",
+      "region": "bay-area",
+      "lat": 37.7509,
+      "lon": -122.1452
+    },
+    "lake-tahoe": {
+      "title": "Lake Tahoe",
+      "city": "Emerald Bay",
+      "region": "sierra-nevada",
+      "lat": 38.954,
+      "lon": -120.11
+    },
+    "yosemite": {
+      "title": "Yosemite Valley",
+      "city": "Yosemite National Park",
+      "region": "sierra-nevada",
+      "lat": 37.7456,
+      "lon": -119.5936
+    },
+    "shoshone-falls": {
+      "title": "Shoshone Falls",
+      "city": "Twin Falls",
+      "region": "idaho",
+      "lat": 42.5938,
+      "lon": -114.4006
+    },
+    "glacier": {
+      "title": "Glacier National Park",
+      "city": "West Glacier",
+      "region": "montana",
+      "lat": 48.62,
+      "lon": -113.87
+    },
+    "portage-valley": {
+      "title": "Portage Valley",
+      "city": "Turnagain Arm",
+      "region": "alaska",
+      "lat": 60.784,
+      "lon": -148.84
+    },
+    "kenai-fjords": {
+      "title": "Kenai Fjords",
+      "city": "Seward",
+      "region": "alaska",
+      "lat": 59.85,
+      "lon": -149.55
+    },
+    "great-smoky-mountains": {
+      "title": "Great Smoky Mountains",
+      "city": "Gatlinburg",
+      "region": "smokies",
+      "lat": 35.6118,
+      "lon": -83.4895
+    },
+    "oak-creek-canyon": {
+      "title": "Oak Creek Canyon",
+      "city": "Sedona",
+      "region": "northern-arizona",
+      "lat": 34.99,
+      "lon": -111.75
+    },
+    "sedona": {
+      "title": "Sedona",
+      "city": "Sedona",
+      "region": "northern-arizona",
+      "lat": 34.8697,
+      "lon": -111.761
+    },
+    "antelope-canyon": {
+      "title": "Antelope Canyon",
+      "city": "Page",
+      "region": "northern-arizona",
+      "lat": 36.8619,
+      "lon": -111.3743
+    },
+    "zion": {
+      "title": "Zion National Park",
+      "city": "Springdale",
+      "region": "southern-utah",
+      "lat": 37.2982,
+      "lon": -113.0263
+    },
+    "boston": {
+      "title": "Boston",
+      "city": "Boston",
+      "region": "boston",
+      "lat": 42.3601,
+      "lon": -71.0589
+    },
+    "harvard": {
+      "title": "Harvard",
+      "city": "Cambridge",
+      "region": "boston",
+      "lat": 42.3744,
+      "lon": -71.1169
+    },
+    "midtown": {
+      "title": "Midtown Manhattan",
+      "city": "New York",
+      "region": "new-york",
+      "lat": 40.758,
+      "lon": -73.9855
+    },
+    "lower-manhattan": {
+      "title": "Lower Manhattan",
+      "city": "New York",
+      "region": "new-york",
+      "lat": 40.7115,
+      "lon": -74.0125
+    },
+    "statue-of-liberty": {
+      "title": "Statue of Liberty",
+      "city": "New York Harbor",
+      "region": "new-york",
+      "lat": 40.6892,
+      "lon": -74.0445
+    },
+    "dumbo": {
+      "title": "DUMBO",
+      "city": "Brooklyn",
+      "region": "new-york",
+      "lat": 40.7033,
+      "lon": -73.9881
+    },
+    "cabrillo": {
+      "title": "Cabrillo National Monument",
+      "city": "San Diego",
+      "region": "socal",
+      "lat": 32.6735,
+      "lon": -117.2425
+    },
+    "little-italy": {
+      "title": "Little Italy",
+      "city": "San Diego",
+      "region": "socal",
+      "lat": 32.7243,
+      "lon": -117.1688
+    },
+    "loveland-aquarium": {
+      "title": "Loveland Living Planet Aquarium",
+      "city": "Draper",
+      "region": "utah",
+      "lat": 40.5317,
+      "lon": -111.8939
+    },
+    "denali": {
+      "title": "Denali",
+      "city": "Denali National Park",
+      "region": "alaska",
+      "lat": 63.73,
+      "lon": -148.91
+    }
   }
 }

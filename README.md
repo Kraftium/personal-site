@@ -51,7 +51,6 @@ Aidan Kelley's personal site and photography gallery. Plain HTML/CSS and a littl
 | `npm run build` | Generates every HTML page into `site/` |
 | `npm run serve` | Local preview of `site/` |
 | `npm run check` | Lighthouse (mobile), size budgets, and screenshots into `.lighthouse/` |
-| `node scripts/build-map.mjs` | Regenerates the US outline for the Places map (rarely needed) |
 
 ## Hosting (Cloudflare Workers)
 
