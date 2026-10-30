@@ -24,7 +24,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20190802-dsc1035": {
     "alt": "The cracked, blue-white ice of the Athabasca Glacier flowing down between mountains under bright clouds.",
@@ -51,7 +51,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20190810-dsc1149": {
     "alt": "A grey wolf resting its head on the ground in dry grass.",
@@ -60,7 +60,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20190810-dsc1155": {
     "alt": "A turtle stretching its neck up from a rock in soft, dim light.",
@@ -78,7 +78,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20190810-dsc1165": {
     "alt": "A meerkat standing upright on a mound, keeping watch.",
@@ -87,7 +87,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20190810-dsc1171": {
     "alt": "A plump prairie dog sitting up on bare dirt.",
@@ -96,7 +96,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20200710-dsc1348": {
     "alt": "A black Labrador swimming in clear lake water, looking toward shore.",
@@ -105,7 +105,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20200710-dsc1349": {
     "alt": "A wet black Labrador swimming straight at the camera with an orange ball in its mouth.",
@@ -187,7 +187,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20210608-dsc1806": {
     "alt": "A white yarrow flower head standing out against a soft, blurred background.",
@@ -196,7 +196,7 @@
     "collections": [
       "small-things"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20210608-dsc1808": {
     "alt": "A bright pink bitterroot flower blooming between dark rocks.",
@@ -232,7 +232,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20210608-dsc1829": {
     "alt": "A yellow-headed blackbird perched on a cattail in a marsh.",
@@ -241,7 +241,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20210609-dsc1854": {
     "alt": "Low clouds drifting across dark mountains above a still, grey lake.",
@@ -250,7 +250,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20210609-dsc1891": {
     "alt": "Mist hanging over a forested mountainside under heavy clouds.",
@@ -259,7 +259,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20210609-dsc1892": {
     "alt": "A calm lake inlet framed by pines, low cloud hiding the far mountains.",
@@ -286,7 +286,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20210610-dsc1945": {
     "alt": "A snowy valley glimpsed through dark pines under a grey sky.",
@@ -295,7 +295,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20210611-dsc1969": {
     "alt": "A forested shoreline and snowy peaks reflected in a calm lake.",
@@ -388,7 +388,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20220711-dsc2233": {
     "alt": "A sea cave cut into pale rock cliffs topped with spruce trees.",
@@ -397,7 +397,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20220711-dsc2234": {
     "alt": "Grey water stretching to a distant glacier under low blue-grey clouds.",
@@ -424,7 +424,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20220711-dsc2274": {
     "alt": "Two tall sea stacks rising from the water in front of a misty forested shore.",
@@ -442,7 +442,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20220713-dsc2293": {
     "alt": "A moose half hidden among spruce trees.",
@@ -460,7 +460,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20220713-dsc2305": {
     "alt": "Close portrait of a weathered sled dog with a grey-and-tan coat.",
@@ -469,7 +469,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20220713-dsc2307": {
     "alt": "A sled dog with striking pale blue eyes staring into the camera.",
@@ -532,7 +532,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20240304-dsc2534": {
     "alt": "Looking down a deep forested canyon between red and tan cliffs.",
@@ -541,7 +541,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20240305-dsc2538": {
     "alt": "A creek running through bare spring trees at the bottom of a canyon.",
@@ -568,7 +568,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20240305-dsc2604": {
     "alt": "Red rock buttes glowing orange at sunset under soft clouds.",
@@ -605,7 +605,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20240308-dsc2764": {
     "alt": "A rock squirrel perched on a pale sandstone ledge.",
@@ -650,7 +650,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251005-dsc2897": {
     "alt": "Boats tied up in a harbor marina, the Bunker Hill Monument rising behind brick buildings.",
@@ -659,7 +659,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251005-dsc2905": {
     "alt": "Rows of old slate gravestones under big green trees in a historic burying ground.",
@@ -677,7 +677,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20251005-dsc2923": {
     "alt": "A narrow North End street leading to a red brick church, fire escapes overhead.",
@@ -731,7 +731,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251005-dsc2948": {
     "alt": "A shaded brick alley with ivy, a flag, and a red car in a patch of sun.",
@@ -740,7 +740,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251005-dsc2956": {
     "alt": "Park Street Church's white steeple and brick buildings glowing orange at sunset beside a crane.",
@@ -750,7 +750,7 @@
       "architecture",
       "golden-blue-hour"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251005-dsc2960": {
     "alt": "The Custom House tower lit gold against a dark evening sky.",
@@ -833,7 +833,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251010-dsc3097": {
     "alt": "The Statue of Liberty raising her torch against bright white clouds.",
@@ -842,7 +842,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251010-dsc3109": {
     "alt": "The brick buildings of Ellis Island behind trees, seen across choppy water.",
@@ -898,7 +898,7 @@
       "architecture",
       "night"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251011-dsc3154": {
     "alt": "The Manhattan Bridge framed between brick buildings on a grey day in DUMBO.",
@@ -916,7 +916,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20251011-dsc3162": {
     "alt": "A pink Tesla Cybertruck painted with Kirby on a wet street corner.",
@@ -978,7 +978,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260327-dsc3201": {
     "alt": "Close-up of a cluster of pale yellow dried wildflowers against dark gravel, with tiny purple blooms behind.",
@@ -987,7 +987,7 @@
     "collections": [
       "small-things"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260329-dsc3209": {
     "alt": "A red dirt trail climbing a ridge between golden grass and shrubs, sun high in a hazy sky.",
@@ -1023,7 +1023,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260503-dsc3279": {
     "alt": "San Pablo Reservoir winding between forested green hills under grey clouds.",
@@ -1032,7 +1032,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260625-dsc3280": {
     "alt": "The Ferry Building clock tower at the end of a palm-lined Embarcadero, streetcar wires overhead and a large statue in front.",
@@ -1041,7 +1041,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260625-dsc3286": {
     "alt": "The Ferry Building's departures board hanging above the terminal concourse.",
@@ -1066,7 +1066,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260625-dsc3316": {
     "alt": "A sea lion asleep on a weathered wooden dock beside a metal cleat.",
@@ -1075,7 +1075,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20260625-dsc3322": {
     "alt": "The Golden Gate Bridge fading into fog over grey water.",
@@ -1084,7 +1084,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260625-dsc3326": {
     "alt": "The San Francisco skyline under a dark grey sky, seen over trees.",
@@ -1110,7 +1110,7 @@
     "title": "Tanker",
     "place": "golden-gate",
     "collections": [],
-    "favorite": false
+    "favorite": true
   },
   "20260625-dsc3348": {
     "alt": "Looking straight down the roadway at a Golden Gate Bridge tower at dusk, car lights streaking below.",
@@ -1120,7 +1120,7 @@
       "architecture",
       "golden-blue-hour"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260625-dsc3368": {
     "alt": "The Golden Gate Bridge glowing orange at blue hour, traffic lights trailing across the span toward the city.",
@@ -1159,7 +1159,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260704-dsc3405": {
     "alt": "Waves washing into a cove between layered sandstone cliffs.",
@@ -1214,7 +1214,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260705-dsc3455": {
     "alt": "A rocky waterfall in a Japanese garden with a wooden footbridge above and maples turning red.",
@@ -1286,7 +1286,7 @@
     "collections": [
       "architecture"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260705-dsc3499": {
     "alt": "The Little Italy sign arching over a street of shops and parked cars.",
@@ -1304,7 +1304,7 @@
     "collections": [
       "wildlife"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20260706-dsc3524": {
     "alt": "The sun setting into the Pacific below a band of gold clouds, light glittering on the water.",
@@ -1323,7 +1323,7 @@
       "wildlife",
       "golden-blue-hour"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260709-dsc3563": {
     "alt": "A meadow of tall green grass around a small blue lake ringed by pines.",
@@ -1332,7 +1332,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260709-dsc3573": {
     "alt": "A swallowtail butterfly on an orange flower among ferns.",
@@ -1369,7 +1369,7 @@
     "collections": [
       "golden-blue-hour"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260907-dsc3588": {
     "alt": "The sun setting behind mountains over the Great Salt Lake, the sky deep orange.",
@@ -1397,7 +1397,7 @@
     "collections": [
       "golden-blue-hour"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20260907-dsc3600": {
     "alt": "The lights of the Salt Lake Valley spread out below a dark night sky, seen from above.",
@@ -1406,7 +1406,7 @@
     "collections": [
       "night"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20260921-dsc3601": {
     "alt": "Two toads tucked into a small rock burrow.",
@@ -1493,7 +1493,7 @@
       "wildlife",
       "fall"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20261004-dsc3651": {
     "alt": "Tall pines framing a view down the canyon to sunlit slopes and peaks.",
@@ -1551,7 +1551,7 @@
       "fall",
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20261010-dsc3691": {
     "alt": "Stalactites and flowstone lit warm orange inside a limestone cave.",
@@ -1560,7 +1560,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20261010-dsc3693": {
     "alt": "Sweeping folds of cave rock and dripping formations lit gold.",
@@ -1569,7 +1569,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20261010-dsc3698": {
     "alt": "Rough cave formations glowing in pools of light.",
@@ -1596,7 +1596,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20261010-dsc3739": {
     "alt": "A young buck with small antlers, backlit by the evening sun.",
@@ -1606,7 +1606,7 @@
       "wildlife",
       "golden-blue-hour"
     ],
-    "favorite": true
+    "favorite": false
   },
   "20261010-dsc3744": {
     "alt": "The low sun glowing through a tangle of oak branches at dusk.",
@@ -1615,7 +1615,7 @@
     "collections": [
       "golden-blue-hour"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20261010-dsc3750": {
     "alt": "A layer of orange sunset glowing behind a dark hill, framed by oak branches.",
@@ -1642,7 +1642,7 @@
     "collections": [
       "landscapes"
     ],
-    "favorite": false
+    "favorite": true
   },
   "20261011-dsc3773": {
     "alt": "A tall, broken dead snag against a blue sky with white clouds.",
@@ -1714,7 +1714,7 @@
     "collections": [
       "deep-sky"
     ],
-    "favorite": false
+    "favorite": true
   },
   "m45": {
     "alt": "The Pleiades: a cluster of bright blue stars wrapped in faint blue reflection nebula.",
@@ -1750,7 +1750,7 @@
     "collections": [
       "deep-sky"
     ],
-    "favorite": false
+    "favorite": true
   },
   "ngc7000": {
     "alt": "The North America Nebula: sweeping red clouds of gas whose dark edges trace a continent's outline.",
@@ -1768,6 +1768,6 @@
     "collections": [
       "deep-sky"
     ],
-    "favorite": false
+    "favorite": true
   }
 }
