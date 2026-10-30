@@ -1,0 +1,38 @@
+# Regenerates site/ when content changes on main without a rebuild, which is what
+# happens when you save on the /edit page (it only commits content/photos.json).
+# Pushes that already include an up-to-date site/ build to the same files, so
+# nothing is committed. Cloudflare deploys whatever lands on main.
+name: Rebuild site
+
+on:
+  push:
+    branches: [main]
+    paths: ['content/**', 'src/**', 'scripts/build-site.mjs', 'scripts/map.mjs']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+      - name: Commit site/ if it changed
+        run: |
+          git add -A site
+          if git diff --cached --quiet; then echo "site/ already up to date"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Rebuild site from content changes"
+          git push
