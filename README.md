@@ -29,6 +29,22 @@ Aidan Kelley's personal site and photography gallery. Plain HTML/CSS and a littl
 5. Optional: `npm run check` (Lighthouse on a sample of pages; needs Chrome).
 6. Commit and push. Cloudflare deploys `site/`.
 
+## Editing photo details online
+
+`/edit` on the live site edits titles, alt text, places, collections and favorites without touching JSON. Saving commits `content/photos.json` to `main`, then the **Rebuild site** GitHub Action regenerates `site/` and Cloudflare deploys it (a few minutes in all). New photos still come in through `npm run photos`.
+
+It needs two Worker secrets, set once. Either add them in the Cloudflare dashboard (Workers & Pages → www → Settings → Variables and Secrets, type **Secret**), or from this folder:
+
+```
+npx wrangler secret put EDIT_PASSWORD
+npx wrangler secret put GITHUB_TOKEN
+```
+
+- `EDIT_PASSWORD`: a long passphrase. Changing it signs out every browser.
+- `GITHUB_TOKEN`: a fine-grained token (GitHub → Settings → Developer settings → Fine-grained tokens) with access to only this repository and the **Contents: Read and write** permission.
+
+Until both are set, `/edit` answers "not set up yet". Wrong passwords are limited to 5 a minute per IP.
+
 ## Content files
 
 | File | What's in it |

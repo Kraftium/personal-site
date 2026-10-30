@@ -1,6 +1,7 @@
 // Cloudflare Workers config: serve the committed site/ folder as-is.
 // No build step runs on Cloudflare; _headers in site/ sets caching.
-// worker/index.js only runs for /og/photo.jpg (the daily link-preview image).
+// worker/index.js only runs for /og/photo.jpg (the daily link-preview image)
+// and /edit (the private photo editor; its secrets are listed in worker/edit.js).
 {
   "name": "www",
   "main": "worker/index.js",
@@ -8,10 +9,12 @@
   "assets": {
     "directory": "./site",
     "binding": "ASSETS",
-    "run_worker_first": ["/og/photo.jpg"],
+    "run_worker_first": ["/og/photo.jpg", "/edit", "/edit/*"],
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
   },
+  // Wrong passwords on /edit: at most 5 tries per minute per IP.
+  "ratelimits": [{ "name": "LOGIN_LIMIT", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } }],
   // Required by `wrangler preview`, which Workers Builds runs for PR branches.
   "previews": {}
 }

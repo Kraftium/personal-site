@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Edit photos</title>
+<style>
+  :root { color-scheme: dark; --bg: #0f0f10; --card: #18181a; --line: #2a2a2e; --text: #ececec; --dim: #9a9aa0; --accent: #e8b44c; --bad: #f07a6a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  input, select, textarea { width: 100%; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+  textarea { resize: vertical; min-height: 3.6em; }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  button { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 7px 14px; cursor: pointer; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #111; font-weight: 600; }
+  button:disabled { opacity: .5; cursor: default; }
+  [hidden] { display: none !important; }
+
+  #login { max-width: 320px; margin: 18vh auto 0; padding: 0 16px; display: grid; gap: 10px; }
+  #login h1 { font-size: 20px; margin: 0 0 4px; }
+  .err { color: var(--bad); min-height: 1.4em; margin: 0; }
+
+  header { position: sticky; top: 0; z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line); padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  header h1 { font-size: 17px; margin: 0 8px 0 0; }
+  header input[type=search] { flex: 1 1 200px; width: auto; }
+  header select { width: auto; max-width: 220px; }
+  header label { display: flex; gap: 6px; align-items: center; white-space: nowrap; color: var(--dim); }
+  header label input { width: auto; }
+  #count { color: var(--dim); margin-left: auto; }
+  @media (max-width: 600px) { header { position: static; } }
+
+  #grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; padding: 16px 16px 96px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+  .card.dirty { border-color: var(--accent); }
+  .thumb { position: relative; aspect-ratio: 3 / 2; background: #000; }
+  .thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+  .star { position: absolute; top: 8px; right: 8px; width: 40px; height: 40px; padding: 0; border-radius: 50%; background: rgba(0,0,0,.55); border: 0; font-size: 22px; line-height: 40px; color: #bbb; }
+  .star[aria-pressed=true] { color: var(--accent); }
+  .fields { padding: 10px 12px 12px; display: grid; gap: 8px; }
+  .meta { color: var(--dim); font-size: 13px; display: flex; justify-content: space-between; gap: 8px; }
+  .fields > label { display: grid; gap: 3px; font-size: 13px; color: var(--dim); }
+  .fields > label > * { font-size: 15px; color: var(--text); }
+  .cols { display: flex; flex-wrap: wrap; gap: 6px; }
+  .cols label { display: flex; gap: 5px; align-items: center; font-size: 13px; padding: 3px 9px; border: 1px solid var(--line); border-radius: 99px; cursor: pointer; }
+  .cols input { width: auto; margin: 0; }
+  .cols label:has(input:checked) { border-color: var(--accent); }
+
+  #bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 3; background: #1d1d20; border-top: 1px solid var(--line); padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end; }
+  #status { margin-right: auto; }
+  #status a { color: var(--accent); }
+</style>
+</head>
+<body>
+<form id="login" hidden>
+  <h1>Edit photos</h1>
+  <input id="pw" type="password" autocomplete="current-password" placeholder="Password" required>
+  <button class="primary">Sign in</button>
+  <p class="err" id="loginErr" role="alert"></p>
+</form>
+
+<div id="app" hidden>
+  <header>
+    <h1>Edit photos</h1>
+    <input id="q" type="search" placeholder="Search titles, alt text, places">
+    <select id="album"><option value="">All albums</option></select>
+    <label><input id="favOnly" type="checkbox"> Favorites only</label>
+    <label><input id="changedOnly" type="checkbox"> Changed</label>
+    <span id="count"></span>
+    <button id="logout" type="button">Sign out</button>
+  </header>
+  <main id="grid"></main>
+  <div id="bar">
+    <span id="status" role="status"></span>
+    <button id="discard" type="button" disabled>Discard</button>
+    <button id="save" type="button" class="primary" disabled>Save</button>
+  </div>
+</div>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const FIELDS = ['title', 'alt', 'place', 'collections', 'favorite'];
+  let D = null; // data from the server
+  let saved = {}; // id -> field values as last saved
+  let draft = {}; // id -> field values being edited
+  const cards = {};
+
+  const values = (p) => ({ title: p.title || '', alt: p.alt || '', place: p.place || '', collections: [...(p.collections || [])], favorite: !!p.favorite });
+  const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+  const changes = () => {
+    const out = {};
+    for (const id in draft) {
+      const c = {};
+      for (const f of FIELDS) if (!same(draft[id][f], saved[id][f])) c[f] = draft[id][f];
+      if (Object.keys(c).length) out[id] = c;
+    }
+    return out;
+  };
+
+  async function api(path, body) {
+    const res = await fetch(`/edit/api/${path}`, body === undefined ? {} : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    const out = await res.json().catch(() => ({ error: `Error ${res.status}` }));
+    if (res.status === 401 && path !== 'login') showLogin('Signed out. Sign in again; your unsaved edits are kept.');
+    if (!res.ok) throw Object.assign(new Error(out.error || `Error ${res.status}`), { status: res.status });
+    return out;
+  }
+
+  function showLogin(msg) {
+    $('login').hidden = false;
+    $('loginErr').textContent = msg || '';
+    $('pw').focus();
+  }
+
+  $('login').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    $('loginErr').textContent = '';
+    try {
+      await api('login', { password: $('pw').value });
+      $('pw').value = '';
+      $('login').hidden = true;
+      if (!D) load();
+    } catch (err) {
+      $('loginErr').textContent = err.message;
+    }
+  });
+
+  $('logout').addEventListener('click', async () => {
+    if (Object.keys(changes()).length && !confirm('Sign out and lose unsaved edits?')) return;
+    await api('logout', {});
+    location.reload();
+  });
+
+  async function load() {
+    try {
+      D = await api('data');
+    } catch (err) {
+      if (err.status !== 401) $('status').textContent = err.message;
+      return;
+    }
+    for (const id in D.photos) {
+      saved[id] = values(D.photos[id]);
+      draft[id] = values(D.photos[id]);
+    }
+    const albums = [...new Set(Object.values(D.images).map((i) => i.album).filter(Boolean))].sort();
+    for (const a of albums) $('album').append(new Option(a, a));
+    const ids = Object.keys(D.photos).sort((a, b) => ((D.images[b] || {}).date || '').localeCompare((D.images[a] || {}).date || ''));
+    for (const id of ids) $('grid').append(card(id));
+    $('app').hidden = false;
+    filter();
+  }
+
+  function el(tag, props = {}, ...kids) {
+    const n = Object.assign(document.createElement(tag), props);
+    n.append(...kids);
+    return n;
+  }
+
+  function card(id) {
+    const img = D.images[id] || {};
+    const d = draft[id];
+    const node = el('article', { className: 'card' });
+    const star = el('button', { className: 'star', type: 'button', textContent: '★', title: 'Favorite' });
+    const title = el('input', { value: d.title, maxLength: 120, placeholder: 'No title' });
+    const alt = el('textarea', { value: d.alt, maxLength: 500, rows: 3 });
+    const place = el('select', {}, new Option('No place', ''));
+    for (const [k, t] of Object.entries(D.places).sort((a, b) => a[1].localeCompare(b[1]))) place.append(new Option(t, k));
+    place.value = d.place;
+    const cols = el('div', { className: 'cols' });
+    for (const [k, t] of Object.entries(D.collections)) {
+      const box = el('input', { type: 'checkbox', checked: d.collections.includes(k), value: k });
+      box.addEventListener('change', () => {
+        d.collections = Object.keys(D.collections).filter((c) => cols.querySelector(`input[value="${c}"]`).checked);
+        mark(id);
+      });
+      cols.append(el('label', {}, box, t));
+    }
+    star.setAttribute('aria-pressed', d.favorite);
+    star.addEventListener('click', () => {
+      d.favorite = !d.favorite;
+      star.setAttribute('aria-pressed', d.favorite);
+      mark(id);
+    });
+    title.addEventListener('input', () => { d.title = title.value; mark(id); });
+    alt.addEventListener('input', () => { d.alt = alt.value; mark(id); });
+    place.addEventListener('change', () => { d.place = place.value; mark(id); });
+
+    node.append(
+      el('div', { className: 'thumb' }, el('img', { src: img.src || '', alt: '', loading: 'lazy', width: img.w || 400, height: img.h || 267 }), star),
+      el('div', { className: 'fields' },
+        el('div', { className: 'meta' }, el('span', { textContent: img.album || 'Loose' }), el('span', { textContent: (img.date || '').slice(0, 10) })),
+        el('label', {}, 'Title', title),
+        el('label', {}, 'Alt text (describes the photo for screen readers)', alt),
+        el('label', {}, 'Place', place),
+        cols,
+      ),
+    );
+    cards[id] = { node, star, title, alt, place, cols };
+    return node;
+  }
+
+  function mark(id) {
+    cards[id].node.classList.toggle('dirty', FIELDS.some((f) => !same(draft[id][f], saved[id][f])));
+    const n = Object.keys(changes()).length;
+    $('save').disabled = $('discard').disabled = !n;
+    $('save').textContent = n ? `Save ${n} photo${n > 1 ? 's' : ''}` : 'Save';
+    if (n) $('status').textContent = '';
+  }
+
+  function filter() {
+    const q = $('q').value.trim().toLowerCase();
+    const album = $('album').value;
+    const ch = changes();
+    let shown = 0;
+    for (const id in cards) {
+      const d = draft[id];
+      const img = D.images[id] || {};
+      const text = `${id} ${d.title} ${d.alt} ${D.places[d.place] || ''}`.toLowerCase();
+      const ok = (!q || text.includes(q)) && (!album || img.album === album) && (!$('favOnly').checked || d.favorite) && (!$('changedOnly').checked || ch[id]);
+      cards[id].node.hidden = !ok;
+      shown += ok;
+    }
+    $('count').textContent = `${shown} of ${Object.keys(cards).length}`;
+  }
+  for (const id of ['q', 'album', 'favOnly', 'changedOnly']) $(id).addEventListener('input', filter);
+
+  function redraw(id) {
+    const old = cards[id].node;
+    old.replaceWith(card(id));
+    mark(id);
+  }
+
+  $('discard').addEventListener('click', () => {
+    if (!confirm('Throw away all unsaved edits?')) return;
+    for (const id in changes()) {
+      draft[id] = values(D.photos[id]);
+      redraw(id);
+    }
+    filter();
+  });
+
+  $('save').addEventListener('click', async () => {
+    const ch = changes();
+    $('save').disabled = $('discard').disabled = true;
+    $('status').textContent = 'Saving\u2026';
+    try {
+      const out = await api('save', { changes: ch });
+      // Take the saved file as the new baseline. Photos with no pending edits
+      // also pick up anything changed elsewhere since the page loaded.
+      for (const id in saved) {
+        if (!out.photos[id]) continue;
+        const clean = same(draft[id], saved[id]);
+        D.photos[id] = out.photos[id];
+        saved[id] = values(out.photos[id]);
+        if ((clean || ch[id]) && !same(draft[id], saved[id])) {
+          draft[id] = values(out.photos[id]);
+          redraw(id);
+        } else if (ch[id]) mark(id);
+      }
+      filter();
+      $('status').replaceChildren('Saved. The site updates in a few minutes. ', el('a', { href: out.commit, target: '_blank', rel: 'noopener', textContent: 'View commit' }));
+    } catch (err) {
+      $('status').textContent = `Not saved: ${err.message}`;
+      mark(Object.keys(ch)[0]);
+    }
+  });
+
+  addEventListener('beforeunload', (e) => {
+    if (D && Object.keys(changes()).length) e.preventDefault();
+  });
+
+  load().then(() => { if (!D && $('login').hidden) showLogin(); });
+})();
+</script>
+</body>
+</html>
